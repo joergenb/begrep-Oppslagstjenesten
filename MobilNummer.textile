@@ -1,0 +1,46 @@
+---
+layout: default
+title: Mobilnummer
+headtitle: Begrepskatalog for Sikker digital post - 
+group: Oppslagstjenesten/Objekt
+---
+
+h3. Mobilnummer
+
+- Identifikator := http://begrep.difi.no/SDP/Mobilnummer
+- Term := Mobilnummer
+- Definisjon := Mobilnummeren for denne meldingen i forbindelse med meldingsutvekslingen
+- Kjelde := SDP
+- Kommentar := Mobilnummer blir brukt av Meldingsutveksler og Meldingsformidler for å styre viktigheten av meldingen under transport. 
+
+h4. Eigenskapar
+
+|_. Identifikator |_. Term |_. Granularitet |_. Datatype |
+| "#Mobiltelefonnummer":Mobiltelefonnummer.html | Mobiltelefonnummer | 1-1 | sdp:Mobiltelefonnummer |
+| "#sistOppdatert":sistOppdatert.html | sistOppdatert | 1-1 | xs:date |
+| "#sistOppdatert":sistVerifisert.html | sistVerifisert | 1-1 | xs:date |
+
+h4. Xml skjema 
+
+<pre class="brush: xml; toolbar: false">
+<xs:complexType name="MobilnummerType" sawsdl:modelReference="http://begrep.difi.no/SDP/Mobilnummer.html">
+        <xs:simpleContent>
+                <xs:extension base="tns:Mobiltelefonnummer">
+                <xs:attribute type="xs:dateTime" name="sistOppdatert" use="required"/>
+                <xs:attribute type="xs:dateTime" name="sistVerifisert" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</pre>
+
+h4. Xml eksempel
+
+<pre class="brush: xml; toolbar: false">
+<Mobilnummer>
+	<Mobiltelefonnummer>+4791222222</Mobiltelefonnummer>
+	<sistOppdatert>2013-12-11T08:20:59.320Z</sistOppdatert>
+	<sistVerifisert>2013-12-11T08:20:59.320Z</sistVerifisert>
+</Mobilnummer>
+</pre>
+
+

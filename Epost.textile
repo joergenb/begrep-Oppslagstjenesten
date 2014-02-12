@@ -1,0 +1,46 @@
+---
+layout: default
+title: Epost
+headtitle: Begrepskatalog for Sikker digital post - 
+group: Oppslagstjenesten/Objekt
+---
+
+h3. Epost
+
+- Identifikator := http://begrep.difi.no/SDP/Epost
+- Term := Epost
+- Definisjon := Eposten for denne meldingen i forbindelse med meldingsutvekslingen
+- Kjelde := SDP
+- Kommentar := Epost blir brukt av Meldingsutveksler og Meldingsformidler for å styre viktigheten av meldingen under transport. 
+
+h4. Eigenskapar
+
+|_. Identifikator |_. Term |_. Granularitet |_. Datatype |
+| "#EpostAdresse":epostadresse.html | epostadresse | 1-1 | sdp:epostadresse |
+| "#sistOppdatert":sistOppdatert.html | sistOppdatert | 1-1 | xs:date |
+| "#sistOppdatert":sistVerifisert.html | sistVerifisert | 1-1 | xs:date |
+
+h4. Xml skjema 
+
+<pre class="brush: xml; toolbar: false">
+<xs:complexType name="EpostType" sawsdl:modelReference="http://begrep.difi.no/SDP/Epost.html">
+        <xs:simpleContent>
+            <xs:extension base="tns:EpostVerdiType">
+                <xs:attribute type="xs:dateTime" name="sistOppdatert" use="required"/>
+                <xs:attribute type="xs:dateTime" name="sistVerifisert" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</pre>
+
+h4. Xml eksempel
+
+<pre class="brush: xml; toolbar: false">
+<Epost>
+	<Epostadresse>abc@domain.com</Epostadresse>
+	<sistOppdatert>2013-12-11T08:20:59.320Z</sistOppdatert>
+	<sistVerifisert>2013-12-11T08:20:59.320Z</sistVerifisert>
+</Epost>
+</pre>
+
+

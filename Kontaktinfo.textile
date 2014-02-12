@@ -1,0 +1,34 @@
+---
+layout: default
+title: Kontaktinfo
+headtitle: Begrepskatalog for Sikker digital post - 
+group: Oppslagstjenesten/Objekt
+---
+
+h3. Kontaktinfo
+
+- Identifikator := http://begrep.difi.no/SDP/Kontaktinfo
+- Term := Kontaktinfo
+- Definisjon := Kontaktinfo er Innbygger sin digital kontaktinformasjon
+- Kjelde := SDP
+- Kommentar := Kontaktinfo inneholder en person digitale kontaktinformasjon, epostadresse og mobiltelefonnummer 
+
+h4. Eigenskapar
+
+|_. Identifikator |_. Term |_. Granularitet |
+| "#MobilType":Mobiltelefonnummer.html | Orgnr | 1-1 |
+| "#EpostType":epostadresse.html | Navn | 1-1 |
+
+
+h4. Xml skjema 
+
+<pre class="brush: xml; toolbar: false">
+   <xs:complexType name="KontaktinfoType" sawsdl:modelReference="http://begrep.difi.no/SDP/kontaktinfo.html">
+        <xs:sequence>
+            <xs:element type="tns:MobilType" name="Mobil" minOccurs="0" maxOccurs="1"/>
+            <xs:element type="tns:EpostType" name="Epost" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+</pre>
+
+

@@ -1,0 +1,42 @@
+---
+layout: default
+title: Person
+headtitle: Begrepskatalog for Sikker digital post - 
+group: Oppslagstjenesten/Objekt
+---
+
+h3. Person
+
+- Identifikator := http://begrep.difi.no/SDP/Person
+- Term := Person
+- Definisjon := Person 
+- Kjelde := SDP
+- Kommentar := Person er Innbygger med et fødselsnummer 
+
+h4. Eigenskapar
+
+|_. Identifikator |_. Term |_. Granularitet |
+| "#FoedselsnummerType":Foedselsnummer.html | Orgnr | 1-1 |
+| "#ReservasjonType":Reservasjon.html | Navn | 1-1 |
+| "#KontaktinfoType":Kontaktinfo.html | Navn | 1-1 |
+| "#SikkerDigitalPostAdresseType":SikkerDigitalPostAdresse.html | Navn | 1-1 |
+| "#SertifikatinfoType":Sertifikatinfo.html| Navn | 1-1 |
+
+h4. Xml skjema 
+
+<pre class="brush: xml; toolbar: false">
+ <xs:element name="Person" type="tns:PersonType"/>
+    <xs:complexType name="PersonType" sawsdl:modelReference="http://begrep.difi.no/Person">
+        <xs:sequence>
+            <xs:element type="tns:FoedselsnummerType" name="Foedselsnummer" minOccurs="1"/>
+            <xs:element type="tns:ReservasjonType" name="Reservasjon" minOccurs="1" maxOccurs="1"/>
+            <xs:element type="tns:KontaktinfoType" name="Kontaktinfo" minOccurs="0" maxOccurs="1"/>
+            <xs:element type="tns:SikkerDigitalPostType" name="SikkerDigitalPost" minOccurs="0" maxOccurs="1"/>
+            <xs:element type="tns:SertifikatinfoType" name="Sertifikatinfo" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+</pre>
+
+
+
+
