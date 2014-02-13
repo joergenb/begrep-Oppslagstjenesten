@@ -1,0 +1,25 @@
+---
+layout: default
+title: Oppslagstjenesten for kontakt og reservasjonsregisteret
+headtitle: Oppslagstjenesten for kontakt og reservasjonsregisteret
+---
+
+h3. Datamodell:
+!oppslagstjenesten_utkast.jpg!
+
+
+h3. Definerte Objekter:
+<ul class='nav'>
+{% assign pages_list = site.pages %}
+{% assign group = "Oppslagstjenesten/Objekt" %}
+	       {% include menu.html %}
+
+</ul>
+
+
+h3. Integrasjonsguide:
+
+"Integrasjonsguide":10022014_integrasjonsguide_oppslagstjenesten_utkast.docx
+
+h3. Lenker:
+
