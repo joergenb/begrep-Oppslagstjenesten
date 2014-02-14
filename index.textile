@@ -5,10 +5,10 @@ headtitle: Oppslagstjenesten for kontakt og reservasjonsregisteret
 ---
 
 h3. Datamodell:
-!oppslagstjenesten_utkast.jpg!
+!{width:80%}oppslagstjenesten_utkast.jpg!
 
+h3. Objekter:
 
-h3. Definerte Objekter:
 <ul class='nav'>
 {% assign pages_list = site.pages %}
 {% assign group = "Oppslagstjenesten/Objekt" %}
@@ -16,10 +16,15 @@ h3. Definerte Objekter:
 
 </ul>
 
+h3. Tjenestespesifikasjon:
+
+* "Tjenestespesifikasjon":xsd/person.xsd
 
 h3. Integrasjonsguide:
 
-"Integrasjonsguide":10022014_integrasjonsguide_oppslagstjenesten_utkast.docx
+* "Integrasjonsguide":10022014_integrasjonsguide_oppslagstjenesten_utkast.docx
 
-h3. Lenker:
+h3. Eksempler:
 
+* "Eksempel response kryptert":10022014_integrasjonsguide_oppslagstjenesten_vedlegg1_soap_response.xml
+* "Eksempel response dekryptert":10022014_integrasjonsguide_oppslagstjenesten_vedlegg1_soap_response.xml
