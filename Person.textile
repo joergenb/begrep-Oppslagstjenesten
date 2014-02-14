@@ -5,10 +5,8 @@ headtitle: Begrepskatalog for Sikker digital post -
 group: Oppslagstjenesten/Objekt
 ---
 
-h3. Person
-
-- Identifikator := http://begrep.difi.no/SDP/Person
-- Term := Person
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Term := {{page.title}}
 - Definisjon := Person 
 - Kjelde := SDP
 - Kommentar := Person er Innbygger med et fødselsnummer 

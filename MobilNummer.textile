@@ -7,10 +7,10 @@ group: Oppslagstjenesten/Objekt
 
 h3. Mobilnummer
 
-- Identifikator := http://begrep.difi.no/SDP/Mobilnummer
-- Term := Mobilnummer
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Term := {{page.title}}
 - Definisjon := Mobilnummeren for denne meldingen i forbindelse med meldingsutvekslingen
-- Kjelde := SDP
+- Kjelde := DIFI
 - Kommentar := Mobilnummer blir brukt av Meldingsutveksler og Meldingsformidler for å styre viktigheten av meldingen under transport. 
 
 h4. Eigenskapar

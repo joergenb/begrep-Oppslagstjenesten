@@ -2,13 +2,11 @@
 layout: default
 title: Sertifikat
 headtitle: Begrepskatalog for Sikker digital post - 
-group: Objekt
+group: Oppslagstjenesten/Objekt
 ---
 
-h3. Sertifikat
-
-- Identifikator := http://begrep.difi.no/SDP/Sertifikat
-- Term := Sertifikat
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Term := {{page.title}}
 - Definisjon := Sertifikat for Innbygger
 - Kjelde := SDP
 - Kommentar := Sertifikat er Innbygger sitt krypteringssertifikat. 
@@ -23,7 +21,7 @@ h4. Eigenskapar
 h4. Xml skjema 
 
 <pre class="brush: xml; toolbar: false">
-    <xs:complexType name="SertifikatinfoType" sawsdl:modelReference="http://begrep.difi.no/Sertifikat">
+    <xs:complexType name="SertifikatinfoType" sawsdl:modelReference="http://begrep.difi.no{{ page.url }}">
         <xs:sequence>
             <xs:element ref="ds:X509Data" />
         </xs:sequence>

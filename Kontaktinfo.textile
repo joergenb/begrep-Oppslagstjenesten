@@ -7,10 +7,10 @@ group: Oppslagstjenesten/Objekt
 
 h3. Kontaktinfo
 
-- Identifikator := http://begrep.difi.no/SDP/Kontaktinfo
-- Term := Kontaktinfo
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Term := {{page.title}}
 - Definisjon := Kontaktinfo er Innbygger sin digital kontaktinformasjon
-- Kjelde := SDP
+- Kjelde := DIFI
 - Kommentar := Kontaktinfo inneholder en person digitale kontaktinformasjon, epostadresse og mobiltelefonnummer 
 
 h4. Eigenskapar

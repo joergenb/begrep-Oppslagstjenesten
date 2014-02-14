@@ -7,10 +7,10 @@ group: Oppslagstjenesten/Objekt
 
 h3. Epost
 
-- Identifikator := http://begrep.difi.no/SDP/Epost
-- Term := Epost
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Term := {{page.title}}
 - Definisjon := Eposten for denne meldingen i forbindelse med meldingsutvekslingen
-- Kjelde := SDP
+- Kjelde := DIFI
 - Kommentar := Epost blir brukt av Meldingsutveksler og Meldingsformidler for å styre viktigheten av meldingen under transport. 
 
 h4. Eigenskapar
