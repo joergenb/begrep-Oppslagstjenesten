@@ -4,10 +4,14 @@ title: Oppslagstjenesten for kontakt og reservasjonsregisteret
 headtitle: Oppslagstjenesten for kontakt og reservasjonsregisteret
 ---
 
+h3. Tjenestespesifikasjonen:
+
+* "Tjenestespesifikasjon":xsd/person.xsd
+
 h3. Datamodell:
 !{width:80%}oppslagstjenesten_utkast.jpg!
 
-h3. Objekter:
+h3. Klassedefinisjonen:
 
 <ul class='nav'>
 {% assign pages_list = site.pages %}
@@ -16,9 +20,6 @@ h3. Objekter:
 
 </ul>
 
-h3. Tjenestespesifikasjon:
-
-* "Tjenestespesifikasjon":xsd/person.xsd
 
 h3. Integrasjonsguide:
 

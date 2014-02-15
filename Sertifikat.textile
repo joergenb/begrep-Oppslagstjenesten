@@ -9,7 +9,7 @@ group: Oppslagstjenesten/Objekt
 - Term := {{page.title}}
 - Definisjon := Sertifikat for Innbygger
 - Kjelde := SDP
-- Kommentar := Sertifikat er Innbygger sitt krypteringssertifikat. 
+- Kommentar := Sertifikatet er Innbygger sitt krypteringssertifikat brukt i Sikker Digital Post. 
 
 h4. Eigenskapar
 
@@ -21,7 +21,7 @@ h4. Eigenskapar
 h4. Xml skjema 
 
 <pre class="brush: xml; toolbar: false">
-    <xs:complexType name="SertifikatinfoType" sawsdl:modelReference="http://begrep.difi.no{{ page.url }}">
+    <xs:complexType name="Sertifikat" sawsdl:modelReference="http://begrep.difi.no{{ page.url }}">
         <xs:sequence>
             <xs:element ref="ds:X509Data" />
         </xs:sequence>

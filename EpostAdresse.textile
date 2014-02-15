@@ -1,31 +1,31 @@
 ---
 layout: default
-title: Epost
+title: EpostAdresse
 headtitle: Begrepskatalog for Sikker digital post - 
 group: Oppslagstjenesten/Objekt
 ---
 
-h3. Epost
+h3. EpostAdresse
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
-- Definisjon := Eposten for denne meldingen i forbindelse med meldingsutvekslingen
+- Definisjon := Informasjon om en Person sitt EpostAdresse registrert i kontakt og reservasjonsregisteret
 - Kjelde := DIFI
-- Kommentar := Epost blir brukt av Meldingsutveksler og Meldingsformidler for å styre viktigheten av meldingen under transport. 
+- Kommentar := Informasjon om en Person sitt EpostAdresse registrert i kontakt og reservasjonsregisteret
 
 h4. Eigenskapar
 
-|_. Identifikator |_. Term |_. Granularitet |_. Datatype |
-| "#EpostAdresse":epostadresse.html | epostadresse | 1-1 | sdp:epostadresse |
-| "#sistOppdatert":sistOppdatert.html | sistOppdatert | 1-1 | xs:date |
-| "#sistOppdatert":sistVerifisert.html | sistVerifisert | 1-1 | xs:date |
+|_. Identifikator |_. Term |_. Granularitet |
+| "#epostAdresse":/Felles/epostAdresse.html | EpostAdresse | 0-1 |
+| "#sistOppdatert":/Felles/sistOppdatert.html | sistOppdatert | 1-1 |
+| "#sistOppdatert":/Felles/sistVerifisert.html | sistVerifisert | 1-1 |
 
 h4. Xml skjema 
 
 <pre class="brush: xml; toolbar: false">
-<xs:complexType name="EpostType" sawsdl:modelReference="http://begrep.difi.no/SDP/Epost.html">
+<xs:complexType name="EpostAdresseType" sawsdl:modelReference="http://begrep.difi.no{{ page.url }}">
         <xs:simpleContent>
-            <xs:extension base="tns:EpostVerdiType">
+            <xs:extension base="tns:EpostAdresse">
                 <xs:attribute type="xs:dateTime" name="sistOppdatert" use="required"/>
                 <xs:attribute type="xs:dateTime" name="sistVerifisert" use="optional"/>
             </xs:extension>
@@ -36,11 +36,11 @@ h4. Xml skjema
 h4. Xml eksempel
 
 <pre class="brush: xml; toolbar: false">
-<Epost>
-	<Epostadresse>abc@domain.com</Epostadresse>
+<EpostAdresse>
+	<EpostAdresseadresse>abc@domain.com</EpostAdresseadresse>
 	<sistOppdatert>2013-12-11T08:20:59.320Z</sistOppdatert>
 	<sistVerifisert>2013-12-11T08:20:59.320Z</sistVerifisert>
-</Epost>
+</EpostAdresse>
 </pre>
 
 

@@ -7,30 +7,56 @@ group: Oppslagstjenesten/Objekt
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
-- Definisjon := Person 
+- Definisjon := Person i kontakt og reservasjonsregisteret 
 - Kjelde := SDP
-- Kommentar := Person er Innbygger med et fødselsnummer 
+- Kommentar := Person er en Innbygger utlevert fra kontakt og reservasjonsregisteret. "status":/Felles/status.html definerer om Person er registrert eller ikke i registreret.
 
 h4. Eigenskapar
 
 |_. Identifikator |_. Term |_. Granularitet |
-| "#FoedselsnummerType":Foedselsnummer.html | Orgnr | 1-1 |
-| "#ReservasjonType":Reservasjon.html | Navn | 1-1 |
-| "#KontaktinfoType":Kontaktinfo.html | Navn | 1-1 |
-| "#SikkerDigitalPostAdresseType":SikkerDigitalPostAdresse.html | Navn | 1-1 |
-| "#SertifikatinfoType":Sertifikatinfo.html| Navn | 1-1 |
+| "#personidentifikator":/Felles/personidentifikator.html | personidentifikator | 1-1 |
+| "#reservasjon":/Felles/reservasjon.html | reservasjon | 1-1 |
+| "#status":/Felles/status.html | status | 0-1 |
+| "#beskrivelse":/Felles/beskrivelse.html | beskrivelse | 0-1 |
+| "#Kontaktinformasjon":/Oppslagstjenesten/Kontaktinformasjon.html | Kontaktinformasjon | 0-1 |
+| "#SikkerDigitalPostAdresse":/Oppslagstjenesten/SikkerDigitalPostAdresse.html | SikkerDigitalPostAdresse | 0-1 |
+| "#Sertifikat":/Oppslagstjenesten/Sertifikat.html| Sertifikat | 0-1 |
+
+
+h4. Kodeverk for status
+
+"status":/Felles/status.html kan ha følgende verdi:
+
+|_. Status |_. Beskrivelse |
+| AKTIV | Person finnes i registeret |
+| SLETTET | Person er slettet fra registeret |
+| IKKE_REGISTRERT | Person finnes ikke i registeret |
+
+h4. Kodeverk for beskrivelse
+
+"beskrivelse":/Felles/beskrivelse.html kan ha følgende verdi:
+
+|_. beskrivelse |_. Beskrivelse og kilde |_. Status |
+| Selvvalgt | Personen har bedt om å bli fjernet fra registeret | SLETTET |
+| Død | Personen har status=5 i DSF | SLETTET |
+| Utgått | Personen har status=6 i DSF | SLETTET |
+| UtgåttTest | Dette er Personer som er lagt inn som testbrukere i registeret for kortere perioder av Sentralforvalter | SLETTET |
+| NyIdentitet | Personer som har fått nytt Identitetsnummer i DSF, enten fra D.nr til F.nr eller F.nr til F.nr | SLETTET |
+
 
 h4. Xml skjema 
 
 <pre class="brush: xml; toolbar: false">
- <xs:element name="Person" type="tns:PersonType"/>
-    <xs:complexType name="PersonType" sawsdl:modelReference="http://begrep.difi.no/Person">
+ <xs:element name="Person" type="tns:Person"/>
+    <xs:complexType name="Person" sawsdl:modelReference="http://begrep.difi.no{{ page.url }}">
         <xs:sequence>
-            <xs:element type="tns:FoedselsnummerType" name="Foedselsnummer" minOccurs="1"/>
-            <xs:element type="tns:ReservasjonType" name="Reservasjon" minOccurs="1" maxOccurs="1"/>
-            <xs:element type="tns:KontaktinfoType" name="Kontaktinfo" minOccurs="0" maxOccurs="1"/>
-            <xs:element type="tns:SikkerDigitalPostType" name="SikkerDigitalPost" minOccurs="0" maxOccurs="1"/>
-            <xs:element type="tns:SertifikatinfoType" name="Sertifikatinfo" minOccurs="0" maxOccurs="1"/>
+            <xs:element type="tns:personidentifikator" name="personidentifikator" minOccurs="1"/>
+            <xs:element type="tns:reservasjon" name="reservasjon" minOccurs="1" maxOccurs="1"/>
+			<xs:element type="tns:status" name="status" minOccurs="1" maxOccurs="1"/>
+			<xs:element type="tns:beskrivelse" name="beskrivelse" minOccurs="1" maxOccurs="1"/>
+            <xs:element type="tns:Kontaktinformasjon" name="Kontaktinformasjon" minOccurs="0" maxOccurs="1"/>
+            <xs:element type="tns:SikkerDigitalPostAdresse" name="SikkerDigitalPostAdresse" minOccurs="0" maxOccurs="1"/>
+            <xs:element type="tns:Sertifikat" name="Sertifikat" minOccurs="0" maxOccurs="1"/>
         </xs:sequence>
     </xs:complexType>
 </pre>
