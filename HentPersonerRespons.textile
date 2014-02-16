@@ -1,0 +1,63 @@
+---
+layout: default
+title: HentPersonerRespons
+headtitle: Begrepskatalog for Sikker digital post - 
+group: Oppslagstjenesten/Objekt
+---
+
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Term := {{page.title}}
+- Definisjon := Respons sendt tilbake til Virksomhet som svar på "HentPersonerForespoersel":HentPersonerForespoersel.html
+- Kjelde := SDP
+- Kommentar := Webservice respons som Oppslagstjenesten sender til Klient, respons inneholder de Personer som Virksomhet forespurte med den registrerte informasjonen som Virksomhet ba om.
+Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørselen og hvordan denne sendes.
+
+h4. Eigenskapar
+
+|_. Identifikator |_. Term |_. Granularitet |
+| "#Person":/Oppslagstjenesten/Person.html | Personer | 1-1000 |
+
+
+h4. Xml skjema 
+
+<pre class="brush: xml; toolbar: false">
+<hentPersonerRespons>
+ <Person>
+	<Foedselsnummer>12345678901</Foedselsnummer>
+	<Reservert>false</Reservert>
+	<Statuskode>SLETTET</Statuskode>
+ </Person>
+ <Person>
+	<Foedselsnummer>23456789011</Foedselsnummer>
+	<Reservert>false</Reservert>
+	<Statuskode>IKKE_REGISTRERT</Statuskode>
+ </Person>
+ <Person>
+	<Foedselsnummer>34567891011</Foedselsnummer>
+	<Reservert>false</Reservert>
+	<Statuskode>AKTIV</Statuskode>
+	<Kontaktinfo>
+	   <Mobil sistOppdatert="2014-01-04T20:00:00Z" sistVerifisert="2014-02-02T13:10:00Z">99887766</Mobil>
+	   <Epost sistOppdatert="2014-01-04T20:00:00Z" sistVerifisert="2014-02-02T13:10:00Z">test@difi.no</Epost>
+	</Kontaktinfo>
+	<Postkasseinfo>
+		<Postkasseadresse>26168336-40b5-48de-8cd2-bf2db1bcec09</Postkasseadresse>
+	 <Organisasjonsnummer>991825827</Organisasjonsnummer>
+	</Postkasseinfo>
+	<Sertifikat>
+		<X509Data>
+			<X509SubjectName>CN=someone,O=Some org,C=NO</X509SubjectName>
+			<X509Certificate>
+				MIIEejCCA2KgAwIBAgIQUZcLJS2IyAyxZzsMNqh5UTANBgkqhkiG9w0BAQsFADBlMQswCQYDVQQG
+				EwJESzEnMCUGA1UEChMeTkFUSU9OQUwgSVQgQU5EIFRFTEVDT00gQUdFTkNZMS0wKwYDVQQDEyRQ
+				RVBQ....
+			</X509Certificate>
+		</X509Data>
+	</Sertifikat>
+  </Person>
+</hentPersonerRespons>
+</pre>
+
+
+
+

@@ -1,0 +1,43 @@
+---
+layout: default
+title: HentPersonerForespoersel
+headtitle: Begrepskatalog for Sikker digital post - 
+group: Oppslagstjenesten/Objekt
+---
+
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Term := {{page.title}}
+- Definisjon := Forespørsel sendt fra Virksomhet for å hente Personer fra kontakt og reservasjonsregisteret
+- Kjelde := SDP
+- Kommentar := Webservice forespørsel som Klient sender til Kontaktregisteret, forespørselen beskriver hvilke personer Klienten ønsker uthentet og hvilken informasjon som ønskes utlevert.
+Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørselen og hvordan denne sendes.
+
+h4. Eigenskapar
+
+|_. Identifikator |_. Term |_. Granularitet |
+| "#personidentifikator":/Felles/personidentifikator.html | personidentifikator | 1-1000 |
+| "#informasjonsbehov":/Felles/informasjonsbehov.html | informasjonsbehov | 0-* |
+
+h4. Informasjonsbehov
+
+Dersom Informasjonsbehov ikke sendes inn er standard verdi: Person
+
+h4. Xml skjema 
+
+<pre class="brush: xml; toolbar: false">
+<HentPersonerForespoersel>
+	<!--0 til fler behov -->
+	<Informasjonsbehov>Person</Informasjonsbehov>
+	<Informasjonsbehov>Kontaktinfo</Informasjonsbehov>
+	<Informasjonsbehov>SikkerDigitalPost</Informasjonsbehov>
+	
+	<personidentifikator>12345678901</personidentifikator>
+	<personidentifikator>23456789101</personidentifikator>
+	<personidentifikator>34567891011</personidentifikator>
+
+</HentPersonerForespoersel>
+</pre>
+
+
+
+
