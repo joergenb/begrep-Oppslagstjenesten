@@ -42,6 +42,7 @@ h4. Kodeverk for beskrivelse
 | Utgått | Personen har status=6 i DSF | SLETTET |
 | UtgåttTest | Dette er Personer som er lagt inn som testbrukere i registeret for kortere perioder av Sentralforvalter | SLETTET |
 | NyIdentitet | Personer som har fått nytt Identitetsnummer i DSF, enten fra D.nr til F.nr eller F.nr til F.nr | SLETTET |
+| Forsvunnet | Personen har status=4 i DSF | SLETTET |
 
 
 h4. Xml skjema 
