@@ -18,9 +18,16 @@ h4. Eigenskapar
 | "#personidentifikator":/Felles/personidentifikator.html | personidentifikator | 1-1000 |
 | "#informasjonsbehov":/Felles/informasjonsbehov.html | informasjonsbehov | 0-* |
 
-h4. Informasjonsbehov
+h4. Kodeverk for "informasjonsbehov":/Felles/informasjonsbehov.html
+
+|_. Informasjonsbehov |_. Beskrivelse |
+| Person | Person gir kun informasjon om Personen finnes i registeret og reservasjonsstatus. Person er implisitt og returneres alltid. |
+| Kontaktinfo | Kontaktinfo gir informasjon om Person og Personers kontaktinformajon |
+| Sertifikat | Sertifikat gir informasjon om Person sitt sertifikat som skal brukes i forbindelse med kryptering av Sikker Digital Post |
+| SikkerDigitalPost | SikkerDigitalPost gir informasjon om Person, postkasse og postkasseleverandøren. |
 
 Dersom Informasjonsbehov ikke sendes inn er standard verdi: Person
+Eventuell overflødig eller dobbel spesifikasjon av informasjonsbehov ignoreres.
 
 h4. Xml skjema 
 

@@ -23,7 +23,7 @@ h3. Klassedefinisjonen:
 
 h3. Integrasjonsguide:
 
-* "Integrasjonsguide":14022014_integrasjonsguide_oppslagstjenesten_utkast.docx
+* "Integrasjonsguide":24022014_integrasjonsguide_oppslagstjenesten_utkast.docx
 
 h3. Eksempler:
 
