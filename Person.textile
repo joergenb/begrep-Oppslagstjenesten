@@ -2,20 +2,21 @@
 layout: default
 title: Person
 headtitle: Begrepskatalog for Sikker digital post - 
-group: Oppslagstjenesten/Objekt
+group: Oppslagstjenesten/complexType
 ---
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Person i kontakt og reservasjonsregisteret 
-- Kjelde := SDP
+- Datatype := complexType
+- Kilde := DIFI
 - Kommentar := Person er en Innbygger utlevert fra kontakt og reservasjonsregisteret. "status":/Felles/status.html definerer om Person er registrert eller ikke i registreret.
 
-h4. Eigenskapar
+h4. Attributer
 
-|_. Identifikator |_. Term |_. Granularitet |
-| "#personidentifikator":/Felles/personidentifikator.html | personidentifikator | 1-1 |
-| "#reservasjon":/Felles/reservasjon.html | reservasjon | 1-1 |
+|_. Identifikator |_. Term |_. Kardinalitet |
+| "#personidentifikator":/Felles/personidentifikator.html | personidentifikator | 1..1 |
+| "#reservasjon":/Felles/reservasjon.html | reservasjon | 1..1 |
 | "#status":/Felles/status.html | status | 0-1 |
 | "#beskrivelse":/Felles/beskrivelse.html | beskrivelse | 0-1 |
 | "#Kontaktinformasjon":/Oppslagstjenesten/Kontaktinformasjon.html | Kontaktinformasjon | 0-1 |
@@ -27,7 +28,7 @@ h4. Kodeverk for status
 
 "status":/Felles/status.html kan ha følgende verdi:
 
-|_. Status |_. Beskrivelse |
+|_. Kodeverdi |_. Beskrivelse |
 | AKTIV | Person finnes i registeret |
 | SLETTET | Person er slettet fra registeret |
 | IKKE_REGISTRERT | Person finnes ikke i registeret |
@@ -44,7 +45,7 @@ h4. Kodeverk for beskrivelse
 
 "beskrivelse":/Felles/beskrivelse.html kan ha følgende verdi:
 
-|_. beskrivelse |_. Beskrivelse og kilde |_. Status |
+|_. Kodeverdi< |_. Beskrivelse og kilde |_. Status |
 | Selvvalgt | Personen har bedt om å bli fjernet fra registeret | SLETTET |
 | Død | Personen har status=5 i DSF | SLETTET |
 | Utgått | Personen har status=6 i DSF | SLETTET |
@@ -53,23 +54,6 @@ h4. Kodeverk for beskrivelse
 | Forsvunnet | Personen har status=4 i DSF | SLETTET |
 
 
-h4. Xml skjema 
-
-<pre class="brush: xml; toolbar: false">
- <xs:element name="Person" type="tns:Person"/>
-    <xs:complexType name="Person" sawsdl:modelReference="http://begrep.difi.no{{ page.url }}">
-        <xs:sequence>
-            <xs:element type="tns:personidentifikator" name="personidentifikator" minOccurs="1"/>
-            <xs:element type="tns:reservasjon" name="reservasjon" minOccurs="1" maxOccurs="1"/>
-			<xs:element type="tns:status" name="status" minOccurs="1" maxOccurs="1"/>
-			<xs:element type="tns:beskrivelse" name="beskrivelse" minOccurs="1" maxOccurs="1"/>
-            <xs:element type="tns:Kontaktinformasjon" name="Kontaktinformasjon" minOccurs="0" maxOccurs="1"/>
-            <xs:element type="tns:SikkerDigitalPostAdresse" name="SikkerDigitalPostAdresse" minOccurs="0" maxOccurs="1"/>
-            <xs:element type="tns:Sertifikat" name="Sertifikat" minOccurs="0" maxOccurs="1"/>
-        </xs:sequence>
-    </xs:complexType>
-</pre>
-
-
+h4. Xml eksempel
 
 

@@ -2,32 +2,27 @@
 layout: default
 title: SikkerDigitalPostAdresse
 headtitle: Begrepskatalog for Sikker digital post - 
-group: Oppslagstjenesten/Objekt
+group: Oppslagstjenesten/complexType
 ---
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Adresse informasjon om Person sin Sikker DigitalPostKasse
-- Kjelde := SDP
+- Datatype := complexType
+- Kilde := DIFI
 - Kommentar := SikkerDigitalPostAdresse er Innbygger sin adresse til Postkassen. Det inneholder nok informasjon til å adresse post til Innbygger sin postkasse. 
 
-h4. Eigenskapar
+h4. Attributer
 
-|_. Identifikator |_. Term |_. Granularitet |
-| "#postkasseAdresse":/Felles/postkasseAdresse.html | postkasseAdresse | 1-1 |
-| "#postkasseLeverandoerAdresse":/Felles/postkasseLeverandoerAdresse.html | postkasseLeverandoerAdresse | 1-1 |
+|_. Identifikator |_. Term |_. Kardinalitet |
+| "#postkasseadresse":/Felles/postkasseadresse.html | postkasseadresse | 1..1 |
+| "#postkasseleverandoerAdresse":/Felles/postkasseleverandoerAdresse.html | postkasseleverandoerAdresse | 1..1 |
 
 
-h4. Xml skjema 
+h4. Xml eksempel 
 
 <pre class="brush: xml; toolbar: false">
-    <xs:complexType name="SikkerDigitalPostAdresse" sawsdl:modelReference="http://begrep.difi.no{{ page.url }}">
-        <xs:sequence>
-            <xs:element ref="postkasseAdresse" />
-			<xs:element ref="postkasseLeverandoerAdresse" />
-        </xs:sequence>
-    </xs:complexType>
-	
+
 </pre>
 
 

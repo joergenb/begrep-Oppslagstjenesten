@@ -15,7 +15,7 @@ h3. Klassedefinisjonen:
 
 <ul class='nav'>
 {% assign pages_list = site.pages %}
-{% assign group = "Oppslagstjenesten/Objekt" %}
+{% assign group = "Oppslagstjenesten/complexType" %}
 	       {% include menu.html %}
 
 </ul>

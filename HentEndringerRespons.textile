@@ -2,29 +2,30 @@
 layout: default
 title: HentEndringerRespons
 headtitle: Begrepskatalog for Sikker digital post - 
-group: Oppslagstjenesten/Objekt
+group: Oppslagstjenesten/complexType
 ---
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Response sendt fra Oppslagstjensten for å levere ut endringer fra kontakt og reservasjonsregisteret til Virksomhet
-- Kjelde := SDP
+- Datatype := complexType
+- Kilde := DIFI
 - Kommentar := Webservice respons som Oppslagstjenesten sender til Klient, respons beskriver de endringer som har vært i registeret.
 Responsen er begrenset til å returnere 1000 personer.
 Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørselen og hvordan denne sendes.
 
-h4. Eigenskapar
+h4. Attributer
 
-|_. Identifikator |_. Term |_. Granularitet |
-| "#fraEndringsNummer":/Felles/fraEndringsNummer.html | fraEndringsNummer | 1-1 |
-| "#tilEndringsNummer":/Felles/tilEndringsNummer.html | tilEndringsNummer | 1-1 |
-| "#senesteEndringsNummer":/Felles/senesteEndringsNummer.html | senesteEndringsNummer | 1-1 |
+|_. Identifikator |_. Term |_. Kardinalitet |
+| "#fraEndringsNummer":/Felles/fraEndringsNummer.html | fraEndringsNummer | 1..1 |
+| "#tilEndringsNummer":/Felles/tilEndringsNummer.html | tilEndringsNummer | 1..1 |
+| "#senesteEndringsNummer":/Felles/senesteEndringsNummer.html | senesteEndringsNummer | 1..1 |
 | "#Person":/Oppslagstjenesten/Person.html | Person | 0-1000 |
 
 Dersom "#tilEndringsNummer":/Felles/tilEndringsNummer.html og "#senesteEndringsNummer":/Felles/senesteEndringsNummer.html er lik finnes det ikke fler endringer i registeret som ikke er utlevert.
 Dersom "#tilEndringsNummer":/Felles/tilEndringsNummer.html er ulik fra "#senesteEndringsNummer":/Felles/senesteEndringsNummer.html så bør Offentlig Virksomhet sende ny "HentEndringerForespoersel":HentEndringerForespoersel.html.
 
-h4. Xml skjema 
+h4. Xml eksempel 
 
 <pre class="brush: xml; toolbar: false">
 <hentEndringerRespons fraEndringsNummer="123" tilEndringsNummer="1123" senesteEndringsNummer="1350">

@@ -2,25 +2,26 @@
 layout: default
 title: HentEndringerForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 
-group: Oppslagstjenesten/Objekt
+group: Oppslagstjenesten/complexType
 ---
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Forespørsel sendt fra Virksomhet for å hente endringer fra kontakt og reservasjonsregisteret
-- Kjelde := SDP
+- Datatype := complexType
+- Kilde := DIFI
 - Kommentar := Webservice forespørsel som Klient sender til Kontaktregisteret, forespørselen beskriver hvilke endringer Klienten ønsker.
 Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørselen og hvordan denne sendes.
 
-h4. Eigenskapar
+h4. Attributer
 
-|_. Identifikator |_. Term |_. Granularitet |
-| "#fraEndringsNummer":/Felles/fraEndringsNummer.html | fraEndringsNummer | 1-1 |
-| "#informasjonsbehov":/Felles/informasjonsbehov.html | informasjonsbehov | 0-* |
+|_. Identifikator |_. Term |_. Kardinalitet |
+| "#fraEndringsNummer":/Felles/fraEndringsNummer.html | fraEndringsNummer | 1..1 |
+| "#informasjonsbehov":/Felles/informasjonsbehov.html | informasjonsbehov | 0..* |
 
 h4. Kodeverk for "informasjonsbehov":/Felles/informasjonsbehov.html
 
-|_. Informasjonsbehov |_. Beskrivelse |
+|_. Kodeverdi |_. Beskrivelse |
 | Person | Person gir kun informasjon om Personen finnes i registeret og reservasjonsstatus. Person er implisitt og returneres alltid. |
 | Kontaktinfo | Kontaktinfo gir informasjon om Person og Personers kontaktinformajon |
 | Sertifikat | Sertifikat gir informasjon om Person sitt sertifikat som skal brukes i forbindelse med kryptering av Sikker Digital Post |
@@ -29,7 +30,7 @@ h4. Kodeverk for "informasjonsbehov":/Felles/informasjonsbehov.html
 Dersom Informasjonsbehov ikke sendes inn er standard verdi: Person
 Eventuell overflødig eller dobbel spesifikasjon av informasjonsbehov ignoreres.
 
-h4. Xml skjema 
+h4. Xml eksempel 
 
 <pre class="brush: xml; toolbar: false">
 <HentEndringerForespoersel fraEndringsNummer="123">

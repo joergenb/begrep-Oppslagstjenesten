@@ -1,31 +1,30 @@
 ---
 layout: default
-title: EpostAdresse
+title: Epostadresse
 headtitle: Begrepskatalog for Sikker digital post - 
-group: Oppslagstjenesten/Objekt
+group: Oppslagstjenesten/complexType
 ---
-
-h3. EpostAdresse
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
-- Definisjon := Informasjon om en Person sitt EpostAdresse registrert i kontakt og reservasjonsregisteret
-- Kjelde := DIFI
-- Kommentar := Informasjon om en Person sitt EpostAdresse registrert i kontakt og reservasjonsregisteret
+- Definisjon := Informasjon om en Person sitt Epostadresse registrert i kontakt og reservasjonsregisteret
+- Datatype := complexType
+- Kilde := DIFI
+- Kommentar := Informasjon om en Person sitt Epostadresse registrert i kontakt og reservasjonsregisteret
 
-h4. Eigenskapar
+h4. Attributer
 
-|_. Identifikator |_. Term |_. Granularitet |
-| "#epostAdresse":/Felles/epostAdresse.html | EpostAdresse | 0-1 |
-| "#sistOppdatert":/Felles/sistOppdatert.html | sistOppdatert | 1-1 |
-| "#sistOppdatert":/Felles/sistVerifisert.html | sistVerifisert | 1-1 |
+|_. Identifikator |_. Term |_. Kardinalitet |
+| "#epostadresse":/Felles/epostadresse.html | Epostadresse | 0-1 |
+| "#sistOppdatert":/Felles/sistOppdatert.html | sistOppdatert | 1..1 |
+| "#sistOppdatert":/Felles/sistVerifisert.html | sistVerifisert | 1..1 |
 
 h4. Xml skjema 
 
 <pre class="brush: xml; toolbar: false">
-<xs:complexType name="EpostAdresseType" sawsdl:modelReference="http://begrep.difi.no{{ page.url }}">
+<xs:complexType name="EpostadresseType" sawsdl:modelReference="http://begrep.difi.no{{ page.url }}">
         <xs:simpleContent>
-            <xs:extension base="tns:EpostAdresse">
+            <xs:extension base="tns:Epostadresse">
                 <xs:attribute type="xs:dateTime" name="sistOppdatert" use="required"/>
                 <xs:attribute type="xs:dateTime" name="sistVerifisert" use="optional"/>
             </xs:extension>
@@ -36,11 +35,11 @@ h4. Xml skjema
 h4. Xml eksempel
 
 <pre class="brush: xml; toolbar: false">
-<EpostAdresse>
-	<EpostAdresseadresse>abc@domain.com</EpostAdresseadresse>
+<Epostadresse>
+	<Epostadresseadresse>abc@domain.com</Epostadresseadresse>
 	<sistOppdatert>2013-12-11T08:20:59.320Z</sistOppdatert>
 	<sistVerifisert>2013-12-11T08:20:59.320Z</sistVerifisert>
-</EpostAdresse>
+</Epostadresse>
 </pre>
 
 

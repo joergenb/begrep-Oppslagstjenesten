@@ -2,33 +2,22 @@
 layout: default
 title: Kontaktinformasjon
 headtitle: Begrepskatalog for Sikker digital post - 
-group: Oppslagstjenesten/Objekt
+group: Oppslagstjenesten/complexType
 ---
-
-h3. Kontaktinformasjon
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Kontaktinformasjon er Adresse informasjon knyttet til en Person for å kommunisere med person
-- Kjelde := DIFI
+- Datatype := complexType
+- Kilde := DIFI
 - Kommentar := Kontaktinformasjon for en Person er epostadresse og mobiltelefonnummer 
 
-h4. Eigenskapar
+h4. Attributer
 
-|_. Identifikator |_. Term |_. Granularitet |
-| "#MobilTelefonNummer":MobilTelefonNummer.html | MobilTelefonNummer | 0-1 |
-| "#EpostAdresse":EpostAdresse.html | EpostAdresse | 0-1 |
+|_. Identifikator |_. Term |_. Kardinalitet |
+| "#Mobiltelefonnummer":Mobiltelefonnummer.html | Mobiltelefonnummer | 0-1 |
+| "#Epostadresse":Epostadresse.html | Epostadresse | 0-1 |
 
 
-h4. Xml skjema 
-
-<pre class="brush: xml; toolbar: false">
-   <xs:complexType name="KontaktinformasjonType" sawsdl:modelReference="http://begrep.difi.no{{ page.url }}">
-        <xs:sequence>
-            <xs:element type="tns:MobilTelefonNummer" name="MobilTelefonNummer" minOccurs="0" maxOccurs="1"/>
-            <xs:element type="tns:EpostAdresse" name="EpostAdresse" minOccurs="0" maxOccurs="1"/>
-        </xs:sequence>
-    </xs:complexType>
-</pre>
-
+h4. Xml eksempel
 
