@@ -2,21 +2,22 @@
 layout: default
 title: Sertifikat
 headtitle: Begrepskatalog for Sikker digital post - 
+datatype: complexType
 group: Oppslagstjenesten/complexType
 ---
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Sertifikat for Innbygger
-- Datatype := complexType
+- Datatype := {{page.datatype}}
 - Kilde := DIFI
 - Kommentar := Sertifikatet er Innbygger sitt krypteringssertifikat brukt i Sikker Digital Post. 
 
 h4. Attributer
 
-|_. Identifikator |_. Term |_. Kardinalitet |
-| "#ds:X509Data":http://www.w3.org/TR/xmldsig-core/ | X509Data | 1..1 |
-| "#UtstederSertifikat":Sertifikat.html | Sertifikat | 1..1 |
+|_. Term |_. Kardinalitet |
+| "ds:X509Data":http://www.w3.org/TR/xmldsig-core/ | 1..1 |
+| "Sertifikat":Sertifikat.html | 1..1 |
 
 
 h4. Xml eksempel
