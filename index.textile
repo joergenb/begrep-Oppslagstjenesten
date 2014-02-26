@@ -6,7 +6,11 @@ headtitle: Oppslagstjenesten for kontakt og reservasjonsregisteret
 
 h3. Tjenestespesifikasjonen:
 
-* "Tjenestespesifikasjon":xsd/person.xsd
+* "WSDL definisjon":xsd/oppslagstjeneste-ws-14-05.wsdl
+* "XSD definisjon":xsd/oppslagstjeneste-ws-14-05.xsd
+* "XSD metadata":xsd/oppslagstjeneste-metadata-14-05.xsd
+
+
 
 h3. Datamodell:
 !{width:80%}oppslagstjenesten_utkast.jpg!
