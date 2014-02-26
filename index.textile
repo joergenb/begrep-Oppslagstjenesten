@@ -9,7 +9,7 @@ h3. Tjenestespesifikasjonen:
 * "WSDL definisjon":xsd/oppslagstjeneste-ws-14-05.wsdl
 * "XSD definisjon":xsd/oppslagstjeneste-ws-14-05.xsd
 * "XSD metadata":xsd/oppslagstjeneste-metadata-14-05.xsd
-
+* "XSD definisjon for fil eksport":xsd/kontaktregister-export-14-05.xsd
 
 
 h3. Datamodell:
@@ -31,6 +31,6 @@ h3. Integrasjonsguide:
 
 h3. Eksempler:
 
-* "Eksempel response kryptert":14022014_integrasjonsguide_oppslagstjenesten_vedlegg1_soap_response.xml
-* "Eksempel response dekryptert":14022014_integrasjonsguide_oppslagstjenesten_vedlegg2_soap_response_encrypted.xml
-* "Eksempel request":14022014_integrasjonsguide_oppslagstjenesten_vedlegg3_soap_request.xml
+* "Eksempel response kryptert":eksempler/14022014_integrasjonsguide_oppslagstjenesten_vedlegg1_soap_response.xml
+* "Eksempel response dekryptert":eksempler/14022014_integrasjonsguide_oppslagstjenesten_vedlegg2_soap_response_encrypted.xml
+* "Eksempel request":eksempler/14022014_integrasjonsguide_oppslagstjenesten_vedlegg3_soap_request.xml
