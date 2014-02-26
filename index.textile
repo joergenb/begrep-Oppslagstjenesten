@@ -3,6 +3,9 @@ layout: default
 title: Oppslagstjenesten for kontakt og reservasjonsregisteret
 headtitle: Oppslagstjenesten for kontakt og reservasjonsregisteret
 ---
+h3. Integrasjonsguide:
+
+* "Integrasjonsguide":24022014_integrasjonsguide_oppslagstjenesten_utkast.docx
 
 h3. Tjenestespesifikasjonen:
 
@@ -24,10 +27,6 @@ h3. Klassedefinisjonen:
 
 </ul>
 
-
-h3. Integrasjonsguide:
-
-* "Integrasjonsguide":24022014_integrasjonsguide_oppslagstjenesten_utkast.docx
 
 h3. Eksempler:
 
