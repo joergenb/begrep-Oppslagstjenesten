@@ -13,7 +13,7 @@ group: Oppslagstjenesten/complexType
 - Kilde := DIFI
 - Kommentar := Webservice forespørsel som Klient sender til Oppslagstjenesten, forespørselen brukes for å hente ut mellomliggende sertifikater nødvendig for å validatorer Person sertifikatene.
 Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørselen og hvordan denne sendes.
-Responsen er en "HentSertifikaterRespons":HentSertifikaterRespons
+Responsen er en "HentMellomliggendeSertifikaterRespons":HentMellomliggendeSertifikaterRespons.html
 
 h4. Attributer
 

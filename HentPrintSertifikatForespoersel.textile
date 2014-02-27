@@ -1,6 +1,6 @@
 ---
 layout: default
-title: HentPrintSertifikaterForespoersel
+title: HentPrintSertifikatForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 
 datatype: complexType
 Service: Oppslagstjenesten
@@ -13,7 +13,7 @@ group: Oppslagstjenesten/complexType
 - Kilde := DIFI
 - Kommentar := Webservice forespørsel som Klient sender til Oppslagstjenesten, forespørselen brukes for å hente ut det sertifikat som skal brukes for å kryptere meldinger som skal printes.
 Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørselen og hvordan denne sendes.
-Responsen er en "HentSertifikaterRespons":HentSertifikaterRespons
+Responsen er en "HentPrintSertifikatRespons":HentPrintSertifikatRespons.html
 
 h4. Attributer
 

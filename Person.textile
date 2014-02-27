@@ -21,7 +21,7 @@ h4. Attributer
 | "beskrivelse":/Felles/beskrivelse.html  | 0-1 |
 | "Kontaktinformasjon":/Oppslagstjenesten/Kontaktinformasjon.html  | 0-1 |
 | "SikkerDigitalPostAdresse":/Oppslagstjenesten/SikkerDigitalPostAdresse.html | 0-1 |
-| "Sertifikat":/Oppslagstjenesten/Sertifikat.html | 0-1 |
+| "X509Certificate":http://www.w3.org/TR/xmldsig-core/#sec-X509Data | 0-1 |
 
 
 h4. Kodeverk for status
@@ -45,7 +45,7 @@ h4. Kodeverk for beskrivelse
 
 "beskrivelse":/Felles/beskrivelse.html kan ha følgende verdi:
 
-|_. Kodeverdi< |_. Beskrivelse og kilde |_. Status |
+|_. Kodeverdi |_. Beskrivelse og kilde |_. Status |
 | Selvvalgt | Personen har bedt om å bli fjernet fra registeret | SLETTET |
 | Død | Personen har status=5 i DSF | SLETTET |
 | Utgått | Personen har status=6 i DSF | SLETTET |

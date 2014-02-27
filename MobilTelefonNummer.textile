@@ -15,9 +15,9 @@ group: Oppslagstjenesten/complexType
 h4. Attributer
 
 |_. Identifikator |_. Term |_. Kardinalitet |
-| "#mobiltelefonnummer":/Felles/mobiltelefonnummer.html | mobiltelefonnummer | 0-1 |
-| "#sistOppdatert":/Felles/sistOppdatert.html | sistOppdatert | 1..1 |
-| "#sistOppdatert":/Felles/sistVerifisert.html | sistVerifisert | 1..1 |
+| "mobiltelefonnummer":/Felles/mobiltelefonnummer.html | mobiltelefonnummer | 0-1 |
+| "sistOppdatert":/Felles/sistOppdatert.html | sistOppdatert | 1..1 |
+| "sistOppdatert":/Felles/sistVerifisert.html | sistVerifisert | 1..1 |
 
 
 h4. Xml eksempel

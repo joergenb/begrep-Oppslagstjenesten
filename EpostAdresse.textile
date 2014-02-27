@@ -15,9 +15,9 @@ group: Oppslagstjenesten/complexType
 h4. Attributer
 
 |_. Identifikator |_. Term |_. Kardinalitet |
-| "#epostadresse":/Felles/epostadresse.html | Epostadresse | 0-1 |
-| "#sistOppdatert":/Felles/sistOppdatert.html | sistOppdatert | 1..1 |
-| "#sistOppdatert":/Felles/sistVerifisert.html | sistVerifisert | 1..1 |
+| "epostadresse":/Felles/epostadresse.html | Epostadresse | 0-1 |
+| "sistOppdatert":/Felles/sistOppdatert.html | sistOppdatert | 1..1 |
+| "sistOppdatert":/Felles/sistVerifisert.html | sistVerifisert | 1..1 |
 
 h4. Xml skjema 
 

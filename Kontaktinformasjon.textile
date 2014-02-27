@@ -15,8 +15,8 @@ group: Oppslagstjenesten/complexType
 h4. Attributer
 
 |_. Identifikator |_. Term |_. Kardinalitet |
-| "#Mobiltelefonnummer":Mobiltelefonnummer.html | Mobiltelefonnummer | 0-1 |
-| "#Epostadresse":Epostadresse.html | Epostadresse | 0-1 |
+| "Mobiltelefonnummer":Mobiltelefonnummer.html | Mobiltelefonnummer | 0-1 |
+| "Epostadresse":Epostadresse.html | Epostadresse | 0-1 |
 
 
 h4. Xml eksempel

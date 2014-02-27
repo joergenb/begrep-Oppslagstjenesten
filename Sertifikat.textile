@@ -16,7 +16,7 @@ group: Oppslagstjenesten/complexType
 h4. Attributer
 
 |_. Term |_. Kardinalitet |
-| "ds:X509Certificate":http://www.w3.org/2000/09/xmldsig#X509Data | 1..1 |
+| "X509Certificate":http://www.w3.org/TR/xmldsig-core/#sec-X509Data | 1..1 |
 
 
 h4. Xml eksempel

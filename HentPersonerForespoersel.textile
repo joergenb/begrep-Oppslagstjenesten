@@ -16,8 +16,8 @@ Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørse
 h4. Attributer
 
 |_. Identifikator |_. Term |_. Kardinalitet |
-| "#personidentifikator":/Felles/personidentifikator.html | personidentifikator | 1..1000 |
-| "#informasjonsbehov":/Felles/informasjonsbehov.html | informasjonsbehov | 0..* |
+| "personidentifikator":/Felles/personidentifikator.html | personidentifikator | 1..1000 |
+| "informasjonsbehov":/Felles/informasjonsbehov.html | informasjonsbehov | 0..* |
 
 h4. Kodeverk for "informasjonsbehov":/Felles/informasjonsbehov.html
 
