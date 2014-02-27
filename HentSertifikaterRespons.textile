@@ -1,0 +1,36 @@
+---
+layout: default
+title: HentSertifikaterRespons
+headtitle: Begrepskatalog for Sikker digital post - 
+group: Oppslagstjenesten/complexType
+---
+
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Term := {{page.title}}
+- Definisjon := Respons sendt tilbake til Virksomhet som svar på "HentMellomliggendeSertifikaterForespoersel":HentMellomliggendeSertifikaterForespoersel og "HentPrintSertifikaterForespoersel":HentPrintSertifikaterForespoersel
+- Datatype := complexType
+- Kilde := DIFI
+- Kommentar := Webservice respons som Oppslagstjenesten sender til Klient, respons inneholder Sertifikater.
+For "HentMellomliggendeSertifikaterForespoersel":HentMellomliggendeSertifikaterForespoersel leveres det ut alle mellomliggende sertifikater i sertifikatkjeden brukt for person sertifikatene i SDP.
+For "HentPrintSertifikaterForespoersel":HentPrintSertifikaterForespoersel leveres det ut det sertifikatet som skal brukes for å kryptere meldinger som skal printes til Innbygger.
+Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om responsen og hvordan denne leveres og sikres.
+
+h4. Attributer
+
+|_. Term |_. Kardinalitet |
+| "Sertifikat":/Oppslagstjenesten/Sertifikat | 0..* |
+
+
+h4. Xml skjema 
+
+<pre class="brush: xml; toolbar: false">
+<{{page.title}}>
+<X509Certificate>MIICXTCCA..</X509Certificate>
+<X509Certificate>23423424..</X509Certificate>
+<X509Certificate>ASDASV234..</X509Certificate>
+</{{page.title}}/>
+
+</pre>
+
+
+
