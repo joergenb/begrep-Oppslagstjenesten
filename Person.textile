@@ -16,12 +16,12 @@ h4. Attributer
 
 |_. Term |_. Kardinalitet |
 | "personidentifikator":/Felles/personidentifikator.html  | 1..1 |
-| "reservasjon":/Felles/reservasjon.html  | 1..1 |
-| "status":/Felles/status.html  | 0-1 |
-| "beskrivelse":/Felles/beskrivelse.html  | 0-1 |
-| "Kontaktinformasjon":/Oppslagstjenesten/Kontaktinformasjon.html  | 0-1 |
-| "SikkerDigitalPostAdresse":/Oppslagstjenesten/SikkerDigitalPostAdresse.html | 0-1 |
-| "X509Certificate":http://www.w3.org/TR/xmldsig-core/#sec-X509Data | 0-1 |
+| "reservasjon":/Felles/reservasjon.html  | 0..1 |
+| "status":/Felles/status.html  | 0..1 |
+| "beskrivelse":/Felles/beskrivelse.html  | 0..1 |
+| "Kontaktinformasjon":/Oppslagstjenesten/Kontaktinformasjon.html  | 0..1 |
+| "SikkerDigitalPostAdresse":/Oppslagstjenesten/SikkerDigitalPostAdresse.html | 0..1 |
+| "X509Certificate":http://www.w3.org/TR/xmldsig-core/#sec-X509Data | 0..1 |
 
 
 h4. Kodeverk for status

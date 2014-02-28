@@ -20,7 +20,7 @@ h4. Attributer
 | "fraEndringsNummer":/Felles/fraEndringsNummer.html | fraEndringsNummer | 1..1 |
 | "tilEndringsNummer":/Felles/tilEndringsNummer.html | tilEndringsNummer | 1..1 |
 | "senesteEndringsNummer":/Felles/senesteEndringsNummer.html | senesteEndringsNummer | 1..1 |
-| "Person":/Oppslagstjenesten/Person.html | Person | 0-1000 |
+| "Person":/Oppslagstjenesten/Person.html | Person | 0..1000 |
 
 Dersom "tilEndringsNummer":/Felles/tilEndringsNummer.html og "senesteEndringsNummer":/Felles/senesteEndringsNummer.html er lik finnes det ikke fler endringer i registeret som ikke er utlevert.
 Dersom "tilEndringsNummer":/Felles/tilEndringsNummer.html er ulik fra "senesteEndringsNummer":/Felles/senesteEndringsNummer.html så bør Offentlig Virksomhet sende ny "HentEndringerForespoersel":HentEndringerForespoersel.html.
