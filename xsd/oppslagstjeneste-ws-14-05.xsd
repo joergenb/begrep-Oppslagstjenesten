@@ -4,6 +4,7 @@
            xmlns:sawsdl="http://www.w3.org/ns/sawsdl"
            xmlns:tns="http://kontaktinfo.difi.no/xsd/oppslagstjeneste/14-05"
            targetNamespace="http://kontaktinfo.difi.no/xsd/oppslagstjeneste/14-05"
+           xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
            elementFormDefault="qualified"
            version="3.0">
 
@@ -73,5 +74,21 @@
             <xs:enumeration value="SikkerDigitalPost" />
         </xs:restriction>
     </xs:simpleType>
+
+
+    <xs:element name="HentPrintSertifikatForespoersel" sawsdl:modelReference="http://begrep.difi.no/Oppslagstjenesten/HentPrintSertifikatForespoersel.html">
+        <xs:complexType/>
+
+    </xs:element>
+    
+    <xs:element name="HentPrintSertifikatRespons" sawsdl:modelReference="http://begrep.difi.no/Oppslagstjenesten/HentPrintSertifikatRespons.html">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="postkasseleverandorAdresse" type="xs:string" minOccurs="1" maxOccurs="1" />
+                <xs:element name="X509Certificate" type="xs:string" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
 
 </xs:schema>

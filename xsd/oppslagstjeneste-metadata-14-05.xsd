@@ -28,17 +28,11 @@
         <xs:sequence>
             <xs:element type="tns:personidentifikator" name="personidentifikator"/>
             <xs:element type="tns:reservasjon" name="reservasjon" minOccurs="0"/>
-            <xs:element type="tns:status" name="status" />
+            <xs:element type="tns:status" name="status" minOccurs="0"/>
             <xs:element type="tns:beskrivelse" name="beskrivelse" minOccurs="0" />
             <xs:element type="tns:Kontaktinformasjon" name="Kontaktinformasjon" minOccurs="0" />
             <xs:element type="tns:SikkerDigitalPostAdresse" name="SikkerDigitalPostAdresse" minOccurs="0" />
-            <xs:element type="tns:Sertifikat" name="Sertifikat" minOccurs="0" />
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="Sertifikat" sawsdl:modelReference="http://begrep.difi.no/Oppslagstjenesten/Sertifikat.html">
-        <xs:sequence>
-            <xs:element ref="ds:X509Data"/>
+            <xs:element name="X509Certificate" type="xs:string" minOccurs="0" maxOccurs="1" />
         </xs:sequence>
     </xs:complexType>
 
@@ -69,29 +63,29 @@
 
     <xs:complexType name="Kontaktinformasjon" sawsdl:modelReference="http://begrep.difi.no/Oppslagstjenesten/Kontaktinformasjon.html">
         <xs:sequence>
-            <xs:element type="tns:MobilTelefonNummer" name="MobilTelefonNummer" minOccurs="0" />
-            <xs:element type="tns:EpostAdresse" name="EpostAdresse" minOccurs="0" />
+            <xs:element type="tns:MobiltelefonNnummer" name="Mobiltelefonnummer" minOccurs="0" />
+            <xs:element type="tns:Epostadresse" name="Epostadresse" minOccurs="0" />
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="SikkerDigitalPostAdresse" sawsdl:modelReference="http://begrep.difi.no/Oppslagstjenesten/SikkerDigitalPostAdresse.html">
         <xs:sequence>
-            <xs:element type="tns:postkasseAdresse" name="postkasseAdresse"  />
-            <xs:element type="tns:postkasseLeverandoerAdresse" name="postkasseLeverandoerAdresse" />
+            <xs:element type="tns:postkasseadresse" name="postkasseadresse"  />
+            <xs:element type="tns:postkasseleverandoerAdresse" name="postkasseleverandoerAdresse" />
         </xs:sequence>
     </xs:complexType>
 
-    <xs:simpleType name="postkasseAdresse"  sawsdl:modelReference="http://begrep.difi.no/Felles/postkasseAdresse.html">
+    <xs:simpleType name="postkasseadresse"  sawsdl:modelReference="http://begrep.difi.no/Felles/postkasseadresse.html">
         <xs:restriction base="xs:string" />
     </xs:simpleType>
 
-    <xs:simpleType name="postkasseLeverandoerAdresse"  sawsdl:modelReference="http://begrep.difi.no/Felles/postkasseLeverandoerAdresse.html">
+    <xs:simpleType name="postkasseleverandoerAdresse"  sawsdl:modelReference="http://begrep.difi.no/Felles/postkasseleverandoerAdresse.html">
         <xs:restriction base="xs:string" />
     </xs:simpleType>
 
-    <xs:complexType name="EpostAdresse" sawsdl:modelReference="http://begrep.difi.no/Oppslagstjenesten/EpostAdresse.html">
+    <xs:complexType name="Epostadresse" sawsdl:modelReference="http://begrep.difi.no/Oppslagstjenesten/Epostadresse.html">
         <xs:simpleContent>
-            <xs:extension base="tns:epostAdresse">
+            <xs:extension base="tns:epostadresse">
                 <xs:attribute type="xs:dateTime" name="sistOppdatert" use="required" sawsdl:modelReference="http://begrep.difi.no/Felles/sistOppdatert.html"/>
                 <xs:attribute type="xs:dateTime" name="sistVerifisert" use="optional" sawsdl:modelReference="http://begrep.difi.no/Felles/sistVerifisert.html"/>
             </xs:extension>
@@ -105,15 +99,14 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="epostAdresse" sawsdl:modelReference="http://begrep.difi.no/Felles/epostadresse.html">
+    <xs:simpleType name="epostadresse" sawsdl:modelReference="http://begrep.difi.no/Felles/epostadresse.html">
         <xs:restriction base="xs:string">
             <xs:minLength value="3"/>
             <xs:maxLength value="50"/>
-            <!-- TODO: USE PATTERN RESTRICTION HERE ?? -->
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:complexType name="MobilTelefonNummer" sawsdl:modelReference="http://begrep.difi.no/Oppslagstjenesten/MobilTelefonNummer.html">
+    <xs:complexType name="Mobiltelefonnummer" sawsdl:modelReference="http://begrep.difi.no/Oppslagstjenesten/Mobiltelefonnummer.html">
         <xs:simpleContent>
             <xs:extension base="tns:mobiltelefonnummer">
                 <xs:attribute type="xs:dateTime" name="sistOppdatert" use="required" sawsdl:modelReference="http://begrep.difi.no/Felles/sistOppdatert.html"/>
