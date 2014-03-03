@@ -14,23 +14,10 @@ group: Oppslagstjenesten/complexType
 
 h4. Attributer
 
-|_. Identifikator |_. Term |_. Kardinalitet |
-| "epostadresse":/Felles/epostadresse.html | Epostadresse | 0..1 |
-| "sistOppdatert":/Felles/sistOppdatert.html | sistOppdatert | 1..1 |
-| "sistOppdatert":/Felles/sistVerifisert.html | sistVerifisert | 1..1 |
-
-h4. Xml skjema 
-
-<pre class="brush: xml; toolbar: false">
-<xs:complexType name="EpostadresseType" sawsdl:modelReference="http://begrep.difi.no{{ page.url }}">
-        <xs:simpleContent>
-            <xs:extension base="tns:Epostadresse">
-                <xs:attribute type="xs:dateTime" name="sistOppdatert" use="required"/>
-                <xs:attribute type="xs:dateTime" name="sistVerifisert" use="optional"/>
-            </xs:extension>
-        </xs:simpleContent>
-    </xs:complexType>
-</pre>
+|_. Term |_. Kardinalitet |
+| "epostadresse":/Felles/epostadresse.html | 0..1 |
+| "sistOppdatert":/Felles/sistOppdatert.html | 1..1 |
+| "sistVerifisert":/Felles/sistVerifisert.html | 1..1 |
 
 h4. Xml eksempel
 
