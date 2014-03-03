@@ -15,8 +15,8 @@ Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørse
 
 h4. Attributer
 
-|_. Identifikator |_. Term |_. Kardinalitet |
-| "Person":/Oppslagstjenesten/Person.html | Personer | 1..1000 |
+|_. Term |_. Kardinalitet |
+| "Person":/Oppslagstjenesten/Person.html| 1..1000 |
 
 
 h4. Xml skjema 

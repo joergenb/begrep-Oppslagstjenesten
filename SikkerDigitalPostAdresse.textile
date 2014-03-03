@@ -14,9 +14,9 @@ group: Oppslagstjenesten/complexType
 
 h4. Attributer
 
-|_. Identifikator |_. Term |_. Kardinalitet |
-| "postkasseadresse":/Felles/postkasseadresse.html | postkasseadresse | 1..1 |
-| "postkasseleverandoerAdresse":/Felles/postkasseleverandoerAdresse.html | postkasseleverandoerAdresse | 1..1 |
+|_. Term |_. Kardinalitet |
+| "postkasseadresse":/Felles/postkasseadresse.html | 1..1 |
+| "postkasseleverandoerAdresse":/Felles/postkasseleverandoerAdresse.html | 1..1 |
 
 
 h4. Xml eksempel 
