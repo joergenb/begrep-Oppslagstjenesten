@@ -5,7 +5,7 @@ headtitle: Begrepskatalog for Sikker digital post -
 group: Oppslagstjenesten/complexType
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Response sendt fra Oppslagstjensten for å levere ut endringer fra kontakt og reservasjonsregisteret til Virksomhet
 - Datatype := complexType
@@ -17,13 +17,13 @@ Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørse
 h4. Attributer
 
 |_. Term |_. Kardinalitet |
-| "fraEndringsNummer":/Felles/fraEndringsNummer.html  | 1..1 |
-| "tilEndringsNummer":/Felles/tilEndringsNummer.html  | 1..1 |
-| "senesteEndringsNummer":/Felles/senesteEndringsNummer.html  | 1..1 |
-| "Person":/Oppslagstjenesten/Person.html| 0..1000 |
+| "fraEndringsNummer":/Felles/fraEndringsNummer  | 1..1 |
+| "tilEndringsNummer":/Felles/tilEndringsNummer  | 1..1 |
+| "senesteEndringsNummer":/Felles/senesteEndringsNummer  | 1..1 |
+| "Person":/Oppslagstjenesten/Person| 0..1000 |
 
-Dersom "tilEndringsNummer":/Felles/tilEndringsNummer.html og "senesteEndringsNummer":/Felles/senesteEndringsNummer.html er lik finnes det ikke fler endringer i registeret som ikke er utlevert.
-Dersom "tilEndringsNummer":/Felles/tilEndringsNummer.html er ulik fra "senesteEndringsNummer":/Felles/senesteEndringsNummer.html så bør Offentlig Virksomhet sende ny "HentEndringerForespoersel":HentEndringerForespoersel.html.
+Dersom "tilEndringsNummer":/Felles/tilEndringsNummer og "senesteEndringsNummer":/Felles/senesteEndringsNummer er lik finnes det ikke fler endringer i registeret som ikke er utlevert.
+Dersom "tilEndringsNummer":/Felles/tilEndringsNummer er ulik fra "senesteEndringsNummer":/Felles/senesteEndringsNummer så bør Offentlig Virksomhet sende ny "HentEndringerForespoersel":HentEndringerForespoersel.
 
 h4. Xml eksempel 
 

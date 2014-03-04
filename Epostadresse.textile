@@ -5,7 +5,7 @@ headtitle: Begrepskatalog for Sikker digital post -
 group: Oppslagstjenesten/complexType
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Informasjon om en Person sitt Epostadresse registrert i kontakt og reservasjonsregisteret
 - Datatype := complexType
@@ -15,9 +15,9 @@ group: Oppslagstjenesten/complexType
 h4. Attributer
 
 |_. Term |_. Kardinalitet |
-| "epostadresse":/Felles/epostadresse.html | 0..1 |
-| "sistOppdatert":/Felles/sistOppdatert.html | 1..1 |
-| "sistVerifisert":/Felles/sistVerifisert.html | 0..1 |
+| "epostadresse":/Felles/epostadresse | 0..1 |
+| "sistOppdatert":/Felles/sistOppdatert | 1..1 |
+| "sistVerifisert":/Felles/sistVerifisert | 0..1 |
 
 h4. Xml eksempel
 

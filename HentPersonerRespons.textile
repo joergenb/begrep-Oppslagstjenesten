@@ -5,9 +5,9 @@ headtitle: Begrepskatalog for Sikker digital post -
 group: Oppslagstjenesten/complexType
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
-- Definisjon := Respons sendt tilbake til Virksomhet som svar på "HentPersonerForespoersel":HentPersonerForespoersel.html
+- Definisjon := Respons sendt tilbake til Virksomhet som svar på "HentPersonerForespoersel":HentPersonerForespoersel
 - Datatype := complexType
 - Kilde := DIFI
 - Kommentar := Webservice respons som Oppslagstjenesten sender til Klient, respons inneholder de Personer som Virksomhet forespurte med den registrerte informasjonen som Virksomhet ba om.
@@ -16,7 +16,7 @@ Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørse
 h4. Attributer
 
 |_. Term |_. Kardinalitet |
-| "Person":/Oppslagstjenesten/Person.html| 1..1000 |
+| "Person":/Oppslagstjenesten/Person | 1..1000 |
 
 
 h4. Xml skjema 

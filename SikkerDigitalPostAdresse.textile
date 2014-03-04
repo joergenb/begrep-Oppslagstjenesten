@@ -5,7 +5,7 @@ headtitle: Begrepskatalog for Sikker digital post -
 group: Oppslagstjenesten/complexType
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Adresse informasjon om Person sin Sikker DigitalPostKasse
 - Datatype := complexType
@@ -15,8 +15,8 @@ group: Oppslagstjenesten/complexType
 h4. Attributer
 
 |_. Term |_. Kardinalitet |
-| "postkasseadresse":/Felles/postkasseadresse.html | 1..1 |
-| "postkasseleverandoerAdresse":/Felles/postkasseleverandoerAdresse.html | 1..1 |
+| "postkasseadresse":/Felles/postkasseadresse | 1..1 |
+| "postkasseleverandoerAdresse":/Felles/postkasseleverandoerAdresse | 1..1 |
 
 
 h4. Xml eksempel 

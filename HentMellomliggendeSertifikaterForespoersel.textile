@@ -6,14 +6,14 @@ datatype: complexType
 Service: Oppslagstjenesten
 group: Oppslagstjenesten/complexType
 ---
-- Identifikator := <a href="/{{ page.Service }}/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := <a href="/{{ page.Service }}/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Forespørsel sendt fra Virksomhet for å hente mellomliggende Sertifikater nødvendig for å validere Innbygger sitt krypteringssertifikat
 - Datatype := {{ page.datatype }}
 - Kilde := DIFI
 - Kommentar := Webservice forespørsel som Klient sender til Oppslagstjenesten, forespørselen brukes for å hente ut mellomliggende sertifikater nødvendig for å validatorer Person sertifikatene.
 Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørselen og hvordan denne sendes.
-Responsen er en "HentMellomliggendeSertifikaterRespons":HentMellomliggendeSertifikaterRespons.html
+Responsen er en "HentMellomliggendeSertifikaterRespons":HentMellomliggendeSertifikaterRespons
 
 h4. Attributer
 

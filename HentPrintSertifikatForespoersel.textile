@@ -6,7 +6,7 @@ datatype: complexType
 Service: Oppslagstjenesten
 group: Oppslagstjenesten/complexType
 ---
-- Identifikator := <a href="/{{ page.Service }}/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := <a href="/{{ page.Service }}/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Forespørsel sendt fra Virksomhet for å hente Sertifikater fra Printleverandør i Sikker Digital Post.
 - Datatype := {{ page.datatype }}

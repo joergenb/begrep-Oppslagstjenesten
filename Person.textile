@@ -5,28 +5,28 @@ headtitle: Begrepskatalog for Sikker digital post -
 group: Oppslagstjenesten/complexType
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}.html">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Person i kontakt og reservasjonsregisteret 
 - Datatype := complexType
 - Kilde := DIFI
-- Kommentar := Person er en Innbygger utlevert fra kontakt og reservasjonsregisteret. "status":/Felles/status.html definerer om Person er registrert eller ikke i registreret.
+- Kommentar := Person er en Innbygger utlevert fra kontakt og reservasjonsregisteret. "status":/Felles/status definerer om Person er registrert eller ikke i registreret.
 
 h4. Attributer
 
 |_. Term |_. Kardinalitet |
-| "personidentifikator":/Felles/personidentifikator.html  | 1..1 |
-| "reservasjon":/Felles/reservasjon.html  | 0..1 |
-| "status":/Felles/status.html  | 0..1 |
-| "beskrivelse":/Felles/beskrivelse.html  | 0..1 |
-| "Kontaktinformasjon":/Oppslagstjenesten/Kontaktinformasjon.html  | 0..1 |
-| "SikkerDigitalPostAdresse":/Oppslagstjenesten/SikkerDigitalPostAdresse.html | 0..1 |
+| "personidentifikator":/Felles/personidentifikator  | 1..1 |
+| "reservasjon":/Felles/reservasjon  | 0..1 |
+| "status":/Felles/status  | 0..1 |
+| "beskrivelse":/Felles/beskrivelse  | 0..1 |
+| "Kontaktinformasjon":/Oppslagstjenesten/Kontaktinformasjon  | 0..1 |
+| "SikkerDigitalPostAdresse":/Oppslagstjenesten/SikkerDigitalPostAdresse | 0..1 |
 | "X509Certificate":http://www.w3.org/TR/xmldsig-core/#sec-X509Data | 0..1 |
 
 
 h4. Kodeverk for status
 
-"status":/Felles/status.html kan ha følgende verdi:
+"status":/Felles/status kan ha følgende verdi:
 
 |_. Kodeverdi |_. Beskrivelse |
 | AKTIV | Person finnes i registeret |
@@ -43,7 +43,7 @@ For oppslag på endringer er kun status AKTIV og SLETTET relevant.
 
 h4. Kodeverk for beskrivelse
 
-"beskrivelse":/Felles/beskrivelse.html kan ha følgende verdi:
+"beskrivelse":/Felles/beskrivelse kan ha følgende verdi:
 
 |_. Kodeverdi |_. Beskrivelse og kilde |_. Status |
 | Selvvalgt | Personen har bedt om å bli fjernet fra registeret | SLETTET |
