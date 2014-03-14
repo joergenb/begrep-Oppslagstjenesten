@@ -33,12 +33,11 @@ Eventuell overflødig eller dobbel spesifikasjon av informasjonsbehov ignoreres.
 h4. Xml eksempel 
 
 <pre class="brush: xml; toolbar: false">
-<HentEndringerForespoersel fraEndringsNummer="123">
-	<!--0 til fler behov -->
-	<Informasjonsbehov>Person</Informasjonsbehov>
-	<Informasjonsbehov>Kontaktinfo</Informasjonsbehov>
-	<Informasjonsbehov>SikkerDigitalPost</Informasjonsbehov>
-</HentEndringerForespoersel>
+<ns:HentEndringerForespoersel fraEndringsNummer="1001">     
+ <ns:informasjonsbehov>Kontaktinfo</ns:informasjonsbehov>
+ <ns:informasjonsbehov>Sertifikat</ns:informasjonsbehov>
+ <ns:informasjonsbehov>SikkerDigitalPost</ns:informasjonsbehov>
+</ns:HentEndringerForespoersel>
 </pre>
 
 

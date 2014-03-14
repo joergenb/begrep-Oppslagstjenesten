@@ -23,7 +23,13 @@ Ingen input attributter
 h4. Xml eksempel 
 
 <pre class="brush: xml; toolbar: false">
-<{{page.title}}/>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://kontaktinfo.difi.no/xsd/oppslagstjeneste/14-05">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:HentPrintSertifikatForespoersel/>
+   </soapenv:Body>
+</soapenv:Envelope>
+
 </pre>
 
 

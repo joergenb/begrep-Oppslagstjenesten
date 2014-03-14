@@ -33,17 +33,16 @@ Eventuell overflødig eller dobbel spesifikasjon av informasjonsbehov ignoreres.
 h4. Xml eksempel 
 
 <pre class="brush: xml; toolbar: false">
-<HentPersonerForespoersel>
-	<!--0 til fler behov -->
-	<Informasjonsbehov>Person</Informasjonsbehov>
-	<Informasjonsbehov>Kontaktinfo</Informasjonsbehov>
-	<Informasjonsbehov>SikkerDigitalPost</Informasjonsbehov>
-	
-	<personidentifikator>12345678901</personidentifikator>
-	<personidentifikator>23456789101</personidentifikator>
-	<personidentifikator>34567891011</personidentifikator>
+<ns:HentPersonerForespoersel>
+ <ns:informasjonsbehov>Kontaktinfo</ns:informasjonsbehov>
+ <ns:informasjonsbehov>Sertifikat</ns:informasjonsbehov>
+ <ns:informasjonsbehov>SikkerDigitalPost</ns:informasjonsbehov>
+ 
+ <ns:personidentifikator>01013355300</ns:personidentifikator>
+ <ns:personidentifikator>01013355491</ns:personidentifikator>
+ <ns:personidentifikator>01013356366</ns:personidentifikator>
+</ns:HentPersonerForespoersel>
 
-</HentPersonerForespoersel>
 </pre>
 
 

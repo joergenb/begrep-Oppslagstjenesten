@@ -6,6 +6,7 @@ headtitle: Oppslagstjenesten for kontakt og reservasjonsregisteret
 h3. Integrasjonsguide:
 
 * "Integrasjonsguide":integrasjonsguide_oppslagstjenesten.docx
+* "Integrasjonsguide for tilleggstjenestene":integrasjonsguide_oppslagstjenesten_tilleggstjenester.docx
 
 h3. Tjenestespesifikasjonen:
 

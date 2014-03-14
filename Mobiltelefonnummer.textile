@@ -23,11 +23,7 @@ h4. Attributer
 h4. Xml eksempel
 
 <pre class="brush: xml; toolbar: false">
-<Mobiltelefonnummer>
-	<Mobiltelefonnummer>+4791222222</Mobiltelefonnummer>
-	<sistOppdatert>2013-12-11T08:20:59.320Z</sistOppdatert>
-	<sistVerifisert>2013-12-11T08:20:59.320Z</sistVerifisert>
-</Mobiltelefonnummer>
+    <ns2:Mobiltelefonnummer sistOppdatert="2014-02-25T13:08:00.000+01:00" sistVerifisert="2013-10-21T10:09:28.000+02:00">12121212</ns2:Mobiltelefonnummer>
 </pre>
 
 
