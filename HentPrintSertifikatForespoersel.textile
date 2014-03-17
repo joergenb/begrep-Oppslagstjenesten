@@ -2,9 +2,9 @@
 layout: default
 title: HentPrintSertifikatForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 
-datatype: complexType
+datatype: Metode
 Service: Oppslagstjenesten
-group: Oppslagstjenesten/complexType
+group: Oppslagstjenesten/Metode
 ---
 - Identifikator := <a href="/{{ page.Service }}/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}

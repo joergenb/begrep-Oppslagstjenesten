@@ -2,13 +2,15 @@
 layout: default
 title: HentEndringerRespons
 headtitle: Begrepskatalog for Sikker digital post - 
-group: Oppslagstjenesten/complexType
+datatype: Metode
+Service: Oppslagstjenes
+group: Oppslagstjenesten/Metode
 ---
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Response sendt fra Oppslagstjensten for å levere ut endringer fra kontakt og reservasjonsregisteret til Virksomhet
-- Datatype := complexType
+- Datatype := {{ page.datatype }}
 - Kilde := DIFI
 - Kommentar := Webservice respons som Oppslagstjenesten sender til Klient, respons beskriver de endringer som har vært i registeret.
 Responsen er begrenset til å returnere 1000 personer.

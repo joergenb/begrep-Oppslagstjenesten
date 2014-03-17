@@ -2,13 +2,15 @@
 layout: default
 title: HentPrintSertifikatRespons
 headtitle: Begrepskatalog for Sikker digital post - 
-group: Oppslagstjenesten/complexType
+datatype: Metode
+Service: Oppslagstjenes
+group: Oppslagstjenesten/Metode
 ---
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Respons sendt tilbake til Virksomhet som svar på  "HentPrintSertifikatForespoersel":HentPrintSertifikatForespoersel.html
-- Datatype := complexType
+- Datatype := {{ page.datatype }}
 - Kilde := DIFI
 - Kommentar := Webservice respons som Oppslagstjenesten sender til Klient, respons inneholder ET Sertifikat.
 For "HentPrintSertifikatForespoersel":HentPrintSertifikatForespoersel.html leveres det ut det sertifikatet som skal brukes for å kryptere meldinger som skal printes til Innbygger.

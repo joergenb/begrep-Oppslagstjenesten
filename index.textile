@@ -1,5 +1,6 @@
 ---
 layout: default
+Service: Oppslagstjenesten
 title: Oppslagstjenesten for kontakt og reservasjonsregisteret
 headtitle: Oppslagstjenesten for kontakt og reservasjonsregisteret
 ---
@@ -20,15 +21,23 @@ h3. Datamodell:
 
 For en oversikt over den eksterne datamodellen utlevert fra Oppslagstjenesten se klassedefinisjonen for "Person":Person.
 
-h3. Klassedefinisjonen:
+h3. Klassedefinisjonen
 
+Følgende liste gir en oversikt over de klasser som er brukt i Oppslagstjenesten.
 <ul class='nav'>
 {% assign pages_list = site.pages %}
 {% assign group = "Oppslagstjenesten/complexType" %}
 	       {% include menu.html %}
-
 </ul>
 
+h3. Metoder:
+
+Følgende forespørslser og responser er knyttet til Oppslagstjenesten.
+<ul class='nav'>
+{% assign pages_list = site.pages %}
+{% assign group = "Oppslagstjenesten/Mtode" %}
+	       {% include menu.html %}
+</ul>
 
 h3. Eksempler:
 

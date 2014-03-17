@@ -2,13 +2,15 @@
 layout: default
 title: HentPersonerRespons
 headtitle: Begrepskatalog for Sikker digital post - 
-group: Oppslagstjenesten/complexType
+datatype: Metode
+Service: Oppslagstjenes
+group: Oppslagstjenesten/Metode
 ---
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
 - Definisjon := Respons sendt tilbake til Virksomhet som svar på "HentPersonerForespoersel":HentPersonerForespoersel
-- Datatype := complexType
+- Datatype := {{ page.datatype }}
 - Kilde := DIFI
 - Kommentar := Webservice respons som Oppslagstjenesten sender til Klient, respons inneholder de Personer som Virksomhet forespurte med den registrerte informasjonen som Virksomhet ba om.
 Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørselen og hvordan denne sendes.
