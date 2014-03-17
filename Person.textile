@@ -12,6 +12,9 @@ group: Oppslagstjenesten/complexType
 - Kilde := DIFI
 - Kommentar := Person er en Innbygger utlevert fra kontakt og reservasjonsregisteret. "status":/Felles/status definerer om Person er registrert eller ikke i registreret.
 
+h4. Datamodell
+!{width:80%}uml_diagram_oppslagstjenesten_ekstern.jpg!
+
 h4. Attributer
 
 |_. Term |_. Kardinalitet |
