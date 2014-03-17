@@ -24,8 +24,7 @@ h4. Attributer
 | "beskrivelse":/Felles/beskrivelse  | 0..1 |
 | "Kontaktinformasjon":/Oppslagstjenesten/Kontaktinformasjon  | 0..1 |
 | "SikkerDigitalPostAdresse":/Oppslagstjenesten/SikkerDigitalPostAdresse | 0..1 |
-| "X509Certificate":http://www.w3.org/TR/xmldsig-core/#sec-X509Data | 0..1 |
-
+| "X509Sertifikat":/Felles/X509Sertifikat | 0..1 |
 
 h4. Kodeverk for status
 
