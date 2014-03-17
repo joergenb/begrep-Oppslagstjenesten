@@ -35,7 +35,7 @@ h3. Metoder:
 Følgende forespørslser og responser er knyttet til Oppslagstjenesten.
 <ul class='nav'>
 {% assign pages_list = site.pages %}
-{% assign group = "Oppslagstjenesten/Mtode" %}
+{% assign group = "Oppslagstjenesten/Metode" %}
 	       {% include menu.html %}
 </ul>
 

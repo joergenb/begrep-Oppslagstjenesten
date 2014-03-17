@@ -1,0 +1,40 @@
+---
+layout: default
+title: VelgSikkerDigitalPostkasseForespoersel
+headtitle: Begrepskatalog for Sikker digital post - 
+datatype: Metode
+Service: Oppslagstjenes
+group: Oppslagstjenesten/Metode
+---
+
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
+- Term := {{page.title}}
+- Definisjon := Forespørsel sendt fra Postkasseleverandør for å at en Innbygger har valgt digital postkasse for offentlig bruk.
+- Datatype := {{ page.datatype }}
+- Kilde := DIFI
+- Kommentar := Webservice forespørsel som Postkasseleverandør sender til Kontaktregisteret, forespørselen setter en digital postkasse for offentlig bruk i kontaktregisteret
+
+UTKAST.
+Også her bør det legges opp til at det kan sendes inn en liste kanskje?
+
+h4. Attributer
+
+|_. Term |_. Kardinalitet |
+| "SikkerDigitalPostAdresse":/Oppslagstjenesten/SikkerDigitalPostAdresse | 1..1 |
+
+h4. Alternative Attributer
+
+|_. Term |_. Kardinalitet |
+| "personidentifikator":/Felles/personidentifikator  | 1..1 |
+| "postkasseleverandoerNavn":/Felles/postkasseleverandoerNavn  | "postkasseleverandoerNavn":/Felles/postkasseleverandoerNavn  | 1..1 |
+
+
+h4. Xml eksempel 
+
+<pre class="brush: xml; toolbar: false">
+
+</pre>
+
+
+
+

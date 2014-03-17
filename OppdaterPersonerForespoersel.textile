@@ -1,0 +1,37 @@
+---
+layout: default
+title: OppdaterPersonerForespoersel
+headtitle: Begrepskatalog for Sikker digital post - 
+datatype: Metode
+Service: Oppslagstjenes
+group: Oppslagstjenesten/Metode
+---
+
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
+- Term := {{page.title}}
+- Definisjon := Forespørsel sendt fra Postkasseleverandør for å opprette, oppdatere eller slette informasjon om Personer sine postkasse.
+- Datatype := {{ page.datatype }}
+- Kilde := DIFI
+- Kommentar := Webservice forespørsel som Postkasseleverandør sender til Kontaktregisteret, forespørselen beskriver hvilke personer Postkassleverandør ønsker oppdatert
+
+h4. Attributer
+
+|_. Term |_. Kardinalitet |
+| "Person":/Oppslagstjenesten/Person | 1..1000 |
+
+h4. Beskrivelse av forespørselen
+
+"Person":/Oppslagstjenesten/Person med | "status":/Felles/status  AKTIV opprettes eller oppdateres.
+For "Person":/Oppslagstjenesten/Person med | "status":/Felles/status  SLETTET blir informasjon om "SikkerDigitalPostAdresse":/Oppslagstjenesten/SikkerDigitalPostAdresse og "X509Sertifikat":/Felles/X509Sertifikat fjernet.
+Følgende egenskaper på "Person":/Oppslagstjenesten/Person brukes ikke: "reservasjon":/Felles/reservasjon, "Kontaktinformasjon":/Oppslagstjenesten/Kontaktinformasjon.
+
+
+h4. Xml eksempel 
+
+<pre class="brush: xml; toolbar: false">
+
+</pre>
+
+
+
+
