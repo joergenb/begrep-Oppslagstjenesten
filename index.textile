@@ -17,7 +17,8 @@ h3. Tjenestespesifikasjonen:
 
 
 h3. Datamodell:
-For en oversikt over den eksterne datamodellen utlevert fra Oppslagstjenesten se på klassedefinisjonen for "Person":Person.
+
+For en oversikt over den eksterne datamodellen utlevert fra Oppslagstjenesten se klassedefinisjonen for "Person":Person.
 
 h3. Klassedefinisjonen:
 
