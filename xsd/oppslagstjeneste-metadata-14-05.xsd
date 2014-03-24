@@ -63,7 +63,7 @@
 
     <xs:complexType name="Kontaktinformasjon" sawsdl:modelReference="http://begrep.difi.no/Oppslagstjenesten/Kontaktinformasjon.html">
         <xs:sequence>
-            <xs:element type="tns:MobiltelefonNnummer" name="Mobiltelefonnummer" minOccurs="0" />
+            <xs:element type="tns:Mobiltelefonnummer" name="Mobiltelefonnummer" minOccurs="0" />
             <xs:element type="tns:Epostadresse" name="Epostadresse" minOccurs="0" />
         </xs:sequence>
     </xs:complexType>
