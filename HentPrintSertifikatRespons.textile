@@ -19,7 +19,7 @@ Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om responsen o
 h4. Attributer
 
 |_. Term |_. Kardinalitet |
-| "postkasseleverandoerAdresse":/Felles/postkasseleverandoerAdresse | postkasseleverandoerAdresse | 1..1 |
+| "postkasseleverandoerAdresse":/Felles/postkasseleverandoerAdresse | 1..1 |
 | "X509Sertifikat":/Felles/X509Sertifikat | 1..1 |
 
 
