@@ -9,7 +9,7 @@
 
 	<wsdl:types>
 		<xsd:schema>
-			<xsd:import namespace="http://kontaktinfo.difi.no/xsd/oppslagstjeneste/14-05" schemaLocation="oppslagstjeneste-ws-14-05.xsd" />
+			<xsd:import namespace="http://begrep.difi.no/Oppslagstjenesten/xsd/" schemaLocation="oppslagstjeneste-ws-14-05.xsd" />
 		</xsd:schema>
 	</wsdl:types>
 
@@ -88,7 +88,7 @@
 
 	<wsdl:service name="oppslagstjeneste-14-05">
 		<wsdl:port binding="tns:oppslagstjeneste-14-05_SOAP11Binding" name="oppslagstjeneste">
-			<soap:address location="/ws-v3" />
+			<soap:address location="https://kontaktinfo-ws.difi.no/kontaktinfo-external/ws-v3" />
 		</wsdl:port>
 	</wsdl:service>
 
