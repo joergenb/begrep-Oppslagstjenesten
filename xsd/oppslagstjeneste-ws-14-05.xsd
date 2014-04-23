@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:m="http://begrep.difi.no/Oppslagstjenesten/"
+           xmlns:m="http://begrep.difi.no"
            xmlns:sawsdl="http://www.w3.org/ns/sawsdl"
            xmlns:tns="http://kontaktinfo.difi.no/xsd/oppslagstjeneste/14-05"
            targetNamespace="http://kontaktinfo.difi.no/xsd/oppslagstjeneste/14-05"
@@ -8,7 +8,7 @@
            elementFormDefault="qualified"
            version="3.0">
 
-    <xs:import namespace="http://begrep.difi.no/Oppslagstjenesten/" schemaLocation="oppslagstjeneste-metadata-14-05.xsd" />
+    <xs:import namespace="http://begrep.difi.no" schemaLocation="oppslagstjeneste-metadata-14-05.xsd" />
 
     <xs:annotation>
         <xs:appinfo>Oppslagstjenesten - Webtjeneste</xs:appinfo>

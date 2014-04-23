@@ -9,7 +9,7 @@
 
 	<wsdl:types>
 		<xsd:schema>
-			<xsd:import namespace="http://begrep.difi.no/Oppslagstjenesten/xsd/" schemaLocation="oppslagstjeneste-ws-14-05.xsd" />
+			<xsd:import namespace="http://kontaktinfo.difi.no/xsd/oppslagstjeneste/14-05" schemaLocation="oppslagstjeneste-ws-14-05.xsd" />
 		</xsd:schema>
 	</wsdl:types>
 

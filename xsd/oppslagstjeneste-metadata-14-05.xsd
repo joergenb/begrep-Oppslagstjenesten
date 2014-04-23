@@ -4,8 +4,8 @@
            elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:sawsdl="http://www.w3.org/ns/sawsdl"
-           xmlns:tns="http://begrep.difi.no/Oppslagstjenesten/"
-           targetNamespace="http://begrep.difi.no/Oppslagstjenesten/"
+           xmlns:tns="http://begrep.difi.no"
+           targetNamespace="http://begrep.difi.no"
         >
 
     <xs:annotation>
