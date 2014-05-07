@@ -6,8 +6,7 @@ headtitle: Oppslagstjenesten for kontakt og reservasjonsregisteret
 ---
 h3. Integrasjonsguide:
 
-* "Integrasjonsguide":integrasjonsguide_oppslagstjenesten.docx
-* "Integrasjonsguide for tilleggstjenestene":integrasjonsguide_oppslagstjenesten_tilleggstjenester.docx
+* Integrasjonsguide for oppslagstjenesten (og for tillegstjenester) finner du på "Difi sin samarbeidsportal":http://samarbeid.difi.no
 
 h3. Tjenestespesifikasjonen:
 
