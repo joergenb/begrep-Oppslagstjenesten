@@ -4,6 +4,9 @@ Service: Oppslagstjenesten
 title: Oppslagstjenesten for kontakt og reservasjonsregisteret
 headtitle: Oppslagstjenesten for kontakt og reservasjonsregisteret
 ---
+
+h2. {{page.title}}
+
 h3. Integrasjonsguide:
 
 * Integrasjonsguide for oppslagstjenesten (og for tillegstjenester) finner du på "Difi sin samarbeidsportal":http://samarbeid.difi.no
@@ -15,7 +18,6 @@ h3. Tjenestespesifikasjonen:
 * "XSD metadata":xsd/oppslagstjeneste-metadata-14-05.xsd
 * "XSD definisjon for fil eksport":xsd/kontaktregister-export-14-05.xsd
 
-
 h3. Datamodell:
 
 For en oversikt over den eksterne datamodellen utlevert fra Oppslagstjenesten se klassedefinisjonen for "Person":Person.
@@ -23,19 +25,30 @@ For en oversikt over den eksterne datamodellen utlevert fra Oppslagstjenesten se
 h3. Klassedefinisjonen
 
 Følgende liste gir en oversikt over de klasser som er brukt i Oppslagstjenesten.
-<ul class='nav'>
-{% assign pages_list = site.pages %}
-{% assign group = "Oppslagstjenesten/complexType" %}
-	       {% include menu.html %}
+
+<ul>
+{% assign sortedPages = site.pages | sort: 'title' %}
+
+{% for page in sortedPages %}
+    {% if page.group == "Oppslagstjenesten/complexType" and (page.url contains site.version or site.version == "HEAD") %}
+	<li>	
+		<a href="{{page.url | remove:".html"}}">{{page.title}}</a>		
+	</li>
+    {% endif %}
+{% endfor %}
 </ul>
 
 h3. Metoder:
 
 Følgende forespørslser og responser er knyttet til Oppslagstjenesten.
-<ul class='nav'>
-{% assign pages_list = site.pages %}
-{% assign group = "Oppslagstjenesten/Metode" %}
-	       {% include menu.html %}
+<ul>
+{% for page in sortedPages %}
+    {% if page.group == "Oppslagstjenesten/Metode" and (page.url contains site.version or site.version == "HEAD") %}
+	<li>	
+		<a href="{{page.url | remove:".html"}}">{{page.title}}</a>		
+	</li>
+    {% endif %}
+{% endfor %}
 </ul>
 
 h3. Eksempler:
