@@ -9,7 +9,7 @@ h2. {{page.title}}
 
 h3. Integrasjonsguide:
 
-* Integrasjonsguide for oppslagstjenesten (og for tillegstjenester) finner du på "Difi sin samarbeidsportal":http://samarbeid.difi.no
+* Integrasjonsguide er tilgjengelig på "DIFI sin samarbeidsportal":http://samarbeid.difi.no
 
 h3. Tjenestespesifikasjonen:
 
