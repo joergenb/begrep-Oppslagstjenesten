@@ -3,7 +3,7 @@ layout: default
 title: HentPersonerForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 
 datatype: Metode
-Service: Oppslagstjenes
+Service: Oppslagstjenesten
 group: Oppslagstjenesten/Metode
 ---
 

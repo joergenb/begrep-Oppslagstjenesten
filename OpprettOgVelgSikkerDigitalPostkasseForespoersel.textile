@@ -1,6 +1,6 @@
 ---
 layout: default
-title: VelgSikkerDigitalPostkasseForespoersel
+title: OpprettOgVelgSikkerDigitalPostkasseForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 
 datatype: Metode
 Service: Oppslagstjenesten
@@ -9,10 +9,10 @@ group: Oppslagstjenesten/Metode
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
-- Definisjon := ForespÃ¸rsel sendt fra PostkasseleverandÃ¸r for Ã¥ at en Innbygger har valgt digital postkasse for offentlig bruk.
+- Definisjon := Forespørsel sendt fra Postkasseleverandør for å opprette og sette at en postkasse aktiveres for en innbygger.
 - Datatype := {{ page.datatype }}
 - Kilde := DIFI
-- Kommentar := Webservice forespÃ¸rsel som PostkasseleverandÃ¸r sender til Kontaktregisteret, forespÃ¸rselen setter en digital postkasse for offentlig bruk i kontaktregisteret
+- Kommentar := Webservice forespørsel som Postkasseleverandør sender til Kontaktregisteret, forespørselen oppdaterer kontaktregisteret med informasjon om en digital postkasse
 
 
 h4. Attributer
@@ -20,6 +20,8 @@ h4. Attributer
 |_. Term |_. Kardinalitet |_. Datatype |
 | "personidentifikator":/Felles/personidentifikator | 1..1 | "xs:string":http://www.w3.org/TR/xmlschema-2/#string |
 | "postkasseleverandoerOrgNummer":/Felles/virksomhetsidentifikator | 1..1 | "xs:string":http://www.w3.org/TR/xmlschema-2/#string |
+| "postkasseadresse":/Felles/postkasseadresse | 1..1 | "xs:string":http://www.w3.org/TR/xmlschema-2/#string |
+| "X509Sertifikat":/Felles/X509Sertifikat | 0..1 | "X509Certifiate":http://www.w3.org/TR/xmldsig-core/#sec-X509Data |
 
 
 

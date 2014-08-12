@@ -1,0 +1,28 @@
+---
+layout: default
+title: OpprettSikkerDigitalPostkasseRespons
+headtitle: Begrepskatalog for Sikker digital post - 
+datatype: Metode
+Service: Oppslagstjenesten
+group: Oppslagstjenesten/Metode
+---
+
+- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
+- Term := {{page.title}}
+- Definisjon := Response sendt tilbake til Postkasseleverandør for å at en Innbygger har valgt digital postkasse for offentlig bruk.
+- Datatype := {{ page.datatype }}
+- Kilde := DIFI
+- Kommentar := Webservice response som Postkasseleverandør mottar fra Kontaktregisteret som svar på "OpprettPostkasseForespoersel":OpprettPostkasseForespoersel
+
+
+h4. Attributer
+
+|_. Term |_. Kardinalitet |. Datatype |
+| opprettPostkasseStatus | 1..1 | "xs:string":http://www.w3.org/TR/xmlschema-2/#string |
+| opprettPostkasseBeskrivelse | 0..1 | "xs:string":http://www.w3.org/TR/xmlschema-2/#string |
+
+
+
+
+
+
