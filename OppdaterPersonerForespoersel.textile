@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 title: OppdaterPersonerForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 

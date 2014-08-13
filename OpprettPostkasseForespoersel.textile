@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 title: OpprettSikkerDigitalPostkasseForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 

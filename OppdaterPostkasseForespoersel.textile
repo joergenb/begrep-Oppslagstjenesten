@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 title: OppdaterPostkasseForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 

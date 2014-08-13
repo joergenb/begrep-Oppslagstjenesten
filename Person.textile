@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 title: Person
 headtitle: Begrepskatalog for Sikker digital post - 

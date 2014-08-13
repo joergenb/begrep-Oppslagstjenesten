@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 title: HentPrintSertifikatForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 

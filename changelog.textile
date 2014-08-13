@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 title: Begrepskatalog for felleskomponenter forvaltet av Difi - endringslogg
 headtitle: Begrepskatalog for felleskomponenter forvaltet av Difi - 
