@@ -1,4 +1,4 @@
----
+ï»¿---
 layout: default
 title: KanVelgeSikkerDigitalPostkasseForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 
@@ -9,10 +9,10 @@ group: Oppslagstjenesten/Metode
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
-- Definisjon := Forespørsel sendt fra Postkasseleverandør for å sjekke om en Innbygger kan velge postkasse for offentlig bruk.
+- Definisjon := ForespÃ¸rsel sendt fra PostkasseleverandÃ¸r for Ã¥ sjekke om en Innbygger kan velge postkasse for offentlig bruk.
 - Datatype := {{ page.datatype }}
 - Kilde := DIFI
-- Kommentar := Webservice forespørsel som Postkasseleverandør sender til Kontaktregisteret, forespørselen sjekker om Innbygger kan velge postkasse for offentlig bruk. 
+- Kommentar := Webservice forespÃ¸rsel som PostkasseleverandÃ¸r sender til Kontaktregisteret, forespÃ¸rselen sjekker om Innbygger kan velge postkasse for offentlig bruk. 
 Dersom Innbygger ikke har registrert noen aktiv postkasse i kontakt og reservasjonsregisteret kan Innbygger velge seg en postkasse for offentlig bruk.
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Mobiltelefonnummer
 headtitle: Begrepskatalog for Sikker digital post - 

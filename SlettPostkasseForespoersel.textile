@@ -1,4 +1,4 @@
----
+ï»¿---
 layout: default
 title: SlettPostkasseForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 
@@ -9,10 +9,10 @@ group: Oppslagstjenesten/Metode
 
 - Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
 - Term := {{page.title}}
-- Definisjon := Forespørsel sendt fra Postkasseleverandør for å slette en postkasse.
+- Definisjon := ForespÃ¸rsel sendt fra PostkasseleverandÃ¸r for Ã¥ slette en postkasse.
 - Datatype := {{ page.datatype }}
 - Kilde := DIFI
-- Kommentar := Webservice forespørsel som Postkasseleverandør sender til Kontaktregisteret, forespørselen sletter en digital postkasse for offentlig bruk i kontaktregisteret
+- Kommentar := Webservice forespÃ¸rsel som PostkasseleverandÃ¸r sender til Kontaktregisteret, forespÃ¸rselen sletter en digital postkasse for offentlig bruk i kontaktregisteret
 
 
 h4. Attributer
