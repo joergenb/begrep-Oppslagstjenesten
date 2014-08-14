@@ -17,12 +17,7 @@ group: Oppslagstjenesten/Metode
 
 h4. Attributer
 
+table(table table-striped).
 |_. Term |_. Kardinalitet |_. Datatype |
 | "personidentifikator":/Felles/personidentifikator | 1..1 | "xs:string":http://www.w3.org/TR/xmlschema-2/#string |
 | "postkasseleverandoerOrgNummer":/Felles/virksomhetsidentifikator | 1..1 | "xs:string":http://www.w3.org/TR/xmlschema-2/#string |
-
-
-
-
-
-
