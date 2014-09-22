@@ -40,9 +40,7 @@ table(table table-striped).
 |_. Kodeverdi |_. Beskrivelse |
 | RESERVERT | brukeren er reservert |
 | ALLEREDE_AKTIV | Brukeren er allerede aktiv |
-| INGEN_POSTBOKS_FUNNET | Det ble ikke funnet noe postkasse på brukeren |
 | BRUKER_IKKE_FUNNET | Innbyggeren ble ikke funnet |
-| POSTKASSE_EKSISTERER_ALLEREDE | Postkasseinformasjon finnes allerede på denne brukeren |
 | UGYLDIG_SERTIFIKAT | Sertifikatet i forespørselen er ikke på godkjent format |
 | UGYLDIG_PERSONNUMMER | Personidentifikator i forespørsel er ikke på riktig format |
 | UGYLDIG_EPOSTADRESSE | Epostadressen i forespørselen er ikke på riktig format |
