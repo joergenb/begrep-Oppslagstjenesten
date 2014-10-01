@@ -88,7 +88,7 @@
 
 	<wsdl:service name="oppslagstjeneste-14-05">
 		<wsdl:port binding="tns:oppslagstjeneste-14-05_SOAP11Binding" name="oppslagstjeneste">
-			<soap:address location="https://kontaktinfo-ws.difi.no/kontaktinfo-external/ws-v3" />
+			<soap:address location="/ws-v3" />
 		</wsdl:port>
 	</wsdl:service>
 

@@ -8,7 +8,7 @@
            elementFormDefault="qualified"
            version="3.0">
 
-    <xs:import namespace="http://begrep.difi.no/Oppslagstjenesten/xsd/" schemaLocation="oppslagstjeneste-metadata-14-05.xsd" />
+    <xs:import namespace="http://begrep.difi.no" schemaLocation="oppslagstjeneste-metadata-14-05.xsd" />
 
     <xs:annotation>
         <xs:appinfo>Eksporttjeneste for Digitalt kontakt- og reservasjonsregister</xs:appinfo>
