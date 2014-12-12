@@ -33,7 +33,7 @@ Følgende liste gir en oversikt over de klasser som er brukt i Oppslagstjenesten
 {% for page in sortedPages %}
     {% if page.group == "Oppslagstjenesten/complexType" and (page.url contains site.version or site.version == "HEAD") %}
 	<li>	
-		<a href="{{page.url | remove:".html"}}">{{page.title}}</a>		
+		<a href="{{pageUrlMinor}}">{{page.title}}</a>		
 	</li>
     {% endif %}
 {% endfor %}
@@ -46,7 +46,7 @@ Følgende forespørslser er tilgjengelig i Oppslagstjenesten for offentlige virk
 {% for page in sortedPages %}
     {% if page.group == "Oppslagstjenesten/Metode" and (page.url contains site.version or site.version == "HEAD") %}
 	<li>	
-		<a href="{{page.url | remove:".html"}}">{{page.title}}</a>		
+		<a href="{pageUrlMinor}}">{{page.title}}</a>		
 	</li>
     {% endif %}
 {% endfor %}
@@ -60,7 +60,7 @@ Postkasseleverandører har følgende forespørsler tilgjengelig i oppslagstjenes
 {% for page in sortedPages %}
     {% if page.group == "Oppslagstjenesten/PK_Metode" and (page.url contains site.version or site.version == "HEAD") %}
 	<li>	
-		<a href="{{page.url | remove:".html"}}">{{page.title}}</a>		
+		<a href="{{pageUrlMinor}}">{{page.title}}</a>		
 	</li>
     {% endif %}
 {% endfor %}
