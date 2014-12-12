@@ -5,7 +5,7 @@ headtitle: Begrepskatalog for Sikker digital post -
 group: Oppslagstjenesten/complexType
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}
 - Definisjon := Person slik den er definert i kontakt og reservasjonsregisteret.
 - Datatype := complexType
@@ -15,10 +15,12 @@ group: Oppslagstjenesten/complexType
 Merk at Person ikke er unik definert på tvers av Difi sine felleskomponenter, men at hver av felleskomponentene har en definisjon av Person i forhold til behovene i den enkelte felleskomponentene.
 
 h4. Datamodell
-!{width:80%}uml_diagram_oppslagstjenesten_ekstern.jpg!
+
+"!(img-responsive)uml_diagram_oppslagstjenesten_ekstern.jpg(Visualisering av datamodellen)!":uml_diagram_oppslagstjenesten_ekstern.jpg
 
 h4. Attributer
 
+table(table table-striped).
 |_. Term |_. Kardinalitet |
 | "personidentifikator":/Felles/personidentifikator  | 1..1 |
 | "reservasjon":/Felles/reservasjon  | 0..1 |
@@ -32,6 +34,7 @@ h4. Kodeverk for status
 
 "status":/Felles/status kan ha følgende verdi:
 
+table(table table-striped).
 |_. Kodeverdi |_. Beskrivelse |
 | AKTIV | Person finnes i registeret |
 | SLETTET | Person er slettet fra registeret |
@@ -49,6 +52,7 @@ h4. Kodeverk for beskrivelse
 
 "beskrivelse":/Felles/beskrivelse kan ha følgende verdi:
 
+table(table table-striped).
 |_. Kodeverdi |_. Beskrivelse og kilde |_. Status |
 | Selvvalgt | Personen har bedt om å bli fjernet fra registeret | SLETTET |
 | Død | Personen har status=5 i DSF | SLETTET |

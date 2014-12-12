@@ -4,10 +4,10 @@ title: HentEndringerRespons
 headtitle: Begrepskatalog for Sikker digital post - 
 datatype: Metode
 Service: Oppslagstjenesten
-group: Oppslagstjenesten/Metode
+group: Oppslagstjenesten/Metode_respons
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}
 - Definisjon := Response sendt fra Oppslagstjensten for å levere ut endringer fra kontakt og reservasjonsregisteret til Virksomhet
 - Datatype := {{ page.datatype }}
@@ -18,14 +18,15 @@ Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørse
 
 h4. Attributer
 
+table(table table-striped).
 |_. Term |_. Kardinalitet |
 | "fraEndringsNummer":/Felles/fraEndringsNummer  | 1..1 |
 | "tilEndringsNummer":/Felles/tilEndringsNummer  | 1..1 |
 | "senesteEndringsNummer":/Felles/senesteEndringsNummer  | 1..1 |
 | "Person":/Oppslagstjenesten/Person| 0..1000 |
 
-Dersom "tilEndringsNummer":/Felles/tilEndringsNummer og "senesteEndringsNummer":/Felles/senesteEndringsNummer er lik finnes det ikke fler endringer i registeret som ikke er utlevert.
-Dersom "tilEndringsNummer":/Felles/tilEndringsNummer er ulik fra "senesteEndringsNummer":/Felles/senesteEndringsNummer så bør Offentlig Virksomhet sende ny "HentEndringerForespoersel":HentEndringerForespoersel.
+* Dersom "tilEndringsNummer":/Felles/tilEndringsNummer og "senesteEndringsNummer":/Felles/senesteEndringsNummer er lik finnes det ikke fler endringer i registeret som ikke er utlevert.
+* Dersom "tilEndringsNummer":/Felles/tilEndringsNummer er ulik fra "senesteEndringsNummer":/Felles/senesteEndringsNummer så bør Offentlig Virksomhet sende ny "HentEndringerForespoersel":HentEndringerForespoersel.
 
 h4. Xml eksempel 
 

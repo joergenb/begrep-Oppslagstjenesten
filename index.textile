@@ -38,9 +38,9 @@ Følgende liste gir en oversikt over de klasser som er brukt i Oppslagstjenesten
 {% endfor %}
 </ul>
 
-h3. Metoder:
+h3. Tjenester for offentlige virksomheter:
 
-Følgende forespørslser og responser er knyttet til Oppslagstjenesten.
+Følgende forespørslser er tilgjengelig i Oppslagstjenesten for offentlige virksomheter
 <ul>
 {% for page in sortedPages %}
     {% if page.group == "Oppslagstjenesten/Metode" and (page.url contains site.version or site.version == "HEAD") %}
@@ -51,8 +51,18 @@ Følgende forespørslser og responser er knyttet til Oppslagstjenesten.
 {% endfor %}
 </ul>
 
-h3. Eksempler:
+h3. Tjenester for postkasseleverandører knyttet til Digital postkasse til innbyggere:
 
-* "Eksempel response kryptert":eksempler/14022014_integrasjonsguide_oppslagstjenesten_vedlegg1_soap_response.xml
-* "Eksempel response dekryptert":eksempler/14022014_integrasjonsguide_oppslagstjenesten_vedlegg2_soap_response_encrypted.xml
-* "Eksempel request":eksempler/14022014_integrasjonsguide_oppslagstjenesten_vedlegg3_soap_request.xml
+Postkasseleverandører har følgende forespørsler tilgjengelig i oppslagstjenesten.
+
+<ul>
+{% for page in sortedPages %}
+    {% if page.group == "Oppslagstjenesten/PK_Metode" and (page.url contains site.version or site.version == "HEAD") %}
+	<li>	
+		<a href="{{page.url | remove:".html"}}">{{page.title}}</a>		
+	</li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+

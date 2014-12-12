@@ -5,7 +5,7 @@ headtitle: Begrepskatalog for Sikker digital post -
 group: Oppslagstjenesten/complexType
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}
 - Definisjon := Informasjon om en Person sitt Mobiltelefonnummer registrert i kontakt og reservasjonsregisteret
 - Datatype := complexType
@@ -14,6 +14,7 @@ group: Oppslagstjenesten/complexType
 
 h4. Attributer
 
+table(table table-striped).
 |_. Term |_. Kardinalitet |
 | "mobiltelefonnummer":/Felles/mobiltelefonnummer | 0..1 |
 | "sistOppdatert":/Felles/sistOppdatert | 1..1 |

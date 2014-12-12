@@ -4,10 +4,10 @@ title: HentPersonerRespons
 headtitle: Begrepskatalog for Sikker digital post - 
 datatype: Metode
 Service: Oppslagstjenesten
-group: Oppslagstjenesten/Metode
+group: Oppslagstjenesten/Metode_respons
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}
 - Definisjon := Respons sendt tilbake til Virksomhet som svar på "HentPersonerForespoersel":HentPersonerForespoersel
 - Datatype := {{ page.datatype }}
@@ -17,8 +17,9 @@ Se integrasjonsguiden for Oppslagstjenesten for tekniske detaljer om forespørse
 
 h4. Attributer
 
+table(table table-striped).
 |_. Term |_. Kardinalitet |
-| "Person":/Oppslagstjenesten/Person | 1..1000 |
+| "Person":Person | 1..1000 |
 
 
 h4. Xml skjema 

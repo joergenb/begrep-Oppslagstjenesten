@@ -4,10 +4,10 @@ title: SlettPostkasseForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 
 datatype: Metode
 Service: Oppslagstjenesten
-group: Oppslagstjenesten/Metode
+group: Oppslagstjenesten/PK_Metode
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}
 - Definisjon := Forespørsel sendt fra Postkasseleverandør for å slette en postkasse.
 - Datatype := {{ page.datatype }}

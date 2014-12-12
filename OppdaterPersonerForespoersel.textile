@@ -3,11 +3,11 @@ layout: default
 title: OppdaterPersonerForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 
 datatype: Metode
-Service: Oppslagstjenes
-group: Oppslagstjenesten/Metode
+Service: Oppslagstjenesten
+group: Oppslagstjenesten/PK_Metode
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}
 - Definisjon := Forespørsel sendt fra Postkasseleverandør for å opprette, oppdatere eller slette informasjon om Personer sine postkasse.
 - Datatype := {{ page.datatype }}
@@ -16,14 +16,15 @@ group: Oppslagstjenesten/Metode
 
 h4. Attributer
 
+table(table table-striped).
 |_. Term |_. Kardinalitet |
-| "Person":/Oppslagstjenesten/Person | 1..1000 |
+| "Person":Person | 1..1000 |
 
 h4. Beskrivelse av forespørselen
 
-"Person":/Oppslagstjenesten/Person med | "status":/Felles/status  AKTIV opprettes eller oppdateres.
-For "Person":/Oppslagstjenesten/Person med | "status":/Felles/status  SLETTET blir informasjon om "SikkerDigitalPostAdresse":/Oppslagstjenesten/SikkerDigitalPostAdresse og "X509Sertifikat":/Felles/X509Sertifikat fjernet.
-Følgende egenskaper på "Person":/Oppslagstjenesten/Person brukes ikke: "reservasjon":/Felles/reservasjon, "Kontaktinformasjon":/Oppslagstjenesten/Kontaktinformasjon.
+"Person":Person med | "status":/Felles/status  AKTIV opprettes eller oppdateres.
+For "Person":Person med | "status":/Felles/status  SLETTET blir informasjon om "SikkerDigitalPostAdresse":SikkerDigitalPostAdresse og "X509Sertifikat":/Felles/X509Sertifikat fjernet.
+Følgende egenskaper på "Person":Person brukes ikke: "reservasjon":/Felles/reservasjon, "Kontaktinformasjon":Kontaktinformasjon.
 
 
 h4. Xml eksempel 

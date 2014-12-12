@@ -4,10 +4,10 @@ title: VelgSikkerDigitalPostkasseRespons
 headtitle: Begrepskatalog for Sikker digital post - 
 datatype: Metode
 Service: Oppslagstjenesten
-group: Oppslagstjenesten/Metode
+group: Oppslagstjenesten/PK_Metode_respons
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}
 - Definisjon := Response sendt tilbake til Postkasseleverandør for å at en Innbygger har valgt digital postkasse for offentlig bruk.
 - Datatype := {{ page.datatype }}
@@ -17,6 +17,7 @@ group: Oppslagstjenesten/Metode
 
 h4. Attributer
 
+table(table table-striped).
 |_. Term |_. Kardinalitet |. Datatype |
 | status | 1..1 | "xs:string":http://www.w3.org/TR/xmlschema-2/#string |
 | beskrivelse | 0..1 | "xs:string":http://www.w3.org/TR/xmlschema-2/#string |

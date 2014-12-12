@@ -6,7 +6,7 @@ datatype: complexType
 group: Oppslagstjenesten/complexType
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}
 - Definisjon := Sertifikat for Innbygger
 - Datatype := {{page.datatype}}
@@ -15,6 +15,7 @@ group: Oppslagstjenesten/complexType
 
 h4. Attributer
 
+table(table table-striped).
 |_. Term |_. Kardinalitet |
 | "X509Certificate":http://www.w3.org/TR/xmldsig-core/#sec-X509Data | 1..1 |
 

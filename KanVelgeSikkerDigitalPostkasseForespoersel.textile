@@ -4,10 +4,10 @@ title: KanVelgeSikkerDigitalPostkasseForespoersel
 headtitle: Begrepskatalog for Sikker digital post - 
 datatype: Metode
 Service: Oppslagstjenesten
-group: Oppslagstjenesten/Metode
+group: Oppslagstjenesten/PK_Metode
 ---
 
-- Identifikator := <a href="/Oppslagstjenesten/{{page.title}}">http://begrep.difi.no{{ page.url }}</a>
+- Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}
 - Definisjon := Forespørsel sendt fra Postkasseleverandør for å sjekke om en Innbygger kan velge postkasse for offentlig bruk.
 - Datatype := {{ page.datatype }}
@@ -18,6 +18,7 @@ Dersom Innbygger ikke har registrert noen aktiv postkasse i kontakt og reservasj
 
 h4. Attributer
 
+table(table table-striped).
 |_. Term |_. Kardinalitet |_. Datatype |
 | "personidentifikator":/Felles/personidentifikator | 1..1 | "xs:string":http://www.w3.org/TR/xmlschema-2/#string |
 
