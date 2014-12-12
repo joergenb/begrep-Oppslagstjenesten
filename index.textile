@@ -4,6 +4,7 @@ Service: Oppslagstjenesten
 title: Oppslagstjenesten for kontakt og reservasjonsregisteret
 headtitle: Oppslagstjenesten for kontakt og reservasjonsregisteret
 ---
+{% include variables.html %}
 
 h2. {{page.title}}
 

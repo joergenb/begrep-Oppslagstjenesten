@@ -6,6 +6,7 @@ datatype: Metode
 Service: Oppslagstjenesten
 group: Oppslagstjenesten/PK_Metode_respons
 ---
+{% include variables.html %}
 
 - Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}

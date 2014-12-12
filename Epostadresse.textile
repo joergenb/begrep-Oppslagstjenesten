@@ -4,6 +4,7 @@ title: Epostadresse
 headtitle: Begrepskatalog for Sikker digital post - 
 group: Oppslagstjenesten/complexType
 ---
+{% include variables.html %}
 
 - Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}

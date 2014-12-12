@@ -6,7 +6,7 @@ datatype: Metode
 Service: Oppslagstjenesten
 group: Oppslagstjenesten/PK_Metode
 ---
-
+{% include variables.html %}
 - Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}
 - Definisjon := Forespørsel sendt fra Postkasseleverandør for å at en Innbygger har valgt digital postkasse for offentlig bruk.

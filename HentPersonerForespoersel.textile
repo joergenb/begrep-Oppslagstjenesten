@@ -6,6 +6,7 @@ datatype: Metode
 Service: Oppslagstjenesten
 group: Oppslagstjenesten/Metode
 ---
+{% include variables.html %}
 
 - Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}

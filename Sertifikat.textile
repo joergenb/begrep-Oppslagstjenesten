@@ -5,6 +5,7 @@ headtitle: Begrepskatalog for Sikker digital post -
 datatype: complexType
 group: Oppslagstjenesten/complexType
 ---
+{% include variables.html %}
 
 - Identifikator := "{{ pageUrlMinor }}":{{ pageUrlMinor }}
 - Term := {{page.title}}
