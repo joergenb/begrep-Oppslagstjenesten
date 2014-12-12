@@ -22,7 +22,7 @@ table(table table-striped).
 | "Person":Person | 1..1000 |
 
 
-h4. Xml skjema 
+h4. Xml eksempel 
 
 <pre class="brush: xml; toolbar: false">
 <ns3:HentPersonerRespons xmlns:ns2="http://begrep.difi.no" xmlns:ns3="http://kontaktinfo.difi.no/xsd/oppslagstjeneste/14-05">
