@@ -22,7 +22,6 @@
             <xs:element type="tns:personidentifikator" name="personidentifikator"/>
             <xs:element type="tns:reservasjon" name="reservasjon" minOccurs="0"/>
             <xs:element type="tns:status" name="status" minOccurs="0"/>
-            <xs:element type="tns:beskrivelse" name="beskrivelse" minOccurs="0" />
             <xs:element type="tns:Kontaktinformasjon" name="Kontaktinformasjon" minOccurs="0" />
             <xs:element type="tns:SikkerDigitalPostAdresse" name="SikkerDigitalPostAdresse" minOccurs="0" />
             <xs:element name="X509Sertifikat" type="tns:X509Sertifikat" minOccurs="0" maxOccurs="1" />
@@ -45,10 +44,6 @@
             <xs:enumeration value="SLETTET"/>
             <xs:enumeration value="IKKE_REGISTRERT"/>
         </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="beskrivelse" sawsdl:modelReference="http://begrep.difi.local/Felles/beskrivelse.html">
-        <xs:restriction base="xs:string" />
     </xs:simpleType>
 
     <xs:simpleType name="reservasjon" sawsdl:modelReference="http://begrep.difi.no/Felles/reservasjon.html">
