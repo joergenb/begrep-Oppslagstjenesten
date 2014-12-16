@@ -26,7 +26,6 @@ table(table table-striped).
 | "personidentifikator":/Felles/personidentifikator  | 1..1 |
 | "reservasjon":/Felles/reservasjon  | 0..1 |
 | "status":/Felles/status  | 0..1 |
-| "beskrivelse":/Felles/beskrivelse  | 0..1 |
 | "Kontaktinformasjon":/Oppslagstjenesten/Kontaktinformasjon  | 0..1 |
 | "SikkerDigitalPostAdresse":/Oppslagstjenesten/SikkerDigitalPostAdresse | 0..1 |
 | "X509Sertifikat":/Felles/X509Sertifikat | 0..1 |
@@ -49,18 +48,6 @@ For oppslag av Person(er) er alle statuskoder relevante.
 For oppslag på endringer er kun status AKTIV og SLETTET relevant.   
 
 
-h4. Kodeverk for beskrivelse
-
-"beskrivelse":/Felles/beskrivelse kan ha følgende verdi:
-
-table(table table-striped).
-|_. Kodeverdi |_. Beskrivelse og kilde |_. Status |
-| Selvvalgt | Personen har bedt om å bli fjernet fra registeret | SLETTET |
-| Død | Personen har status=5 i DSF | SLETTET |
-| Utgått | Personen har status=6 i DSF | SLETTET |
-| UtgåttTest | Dette er Personer som er lagt inn som testbrukere i registeret for kortere perioder av Sentralforvalter | SLETTET |
-| NyIdentitet | Personer som har fått nytt Identitetsnummer i DSF, enten fra D.nr til F.nr eller F.nr til F.nr | SLETTET |
-| Forsvunnet | Personen har status=4 i DSF | SLETTET |
 
 
 h4. Xml eksempel
