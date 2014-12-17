@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: egenskap
 title: Mobiltelefonnummer
 headtitle: Begrepskatalog for Sikker digital post - 
 group: Oppslagstjenesten/complexType

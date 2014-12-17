@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: egenskap
 title: Sertifikat
 headtitle: Begrepskatalog for Sikker digital post - 
 datatype: complexType
