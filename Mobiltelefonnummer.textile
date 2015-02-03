@@ -18,7 +18,7 @@ h4. Attributer
 table(table table-striped).
 |_. Term |_. Kardinalitet |
 | "mobiltelefonnummer":/Felles/mobiltelefonnummer | 0..1 |
-| "sistOppdatert":/Felles/sistOppdatert | 1..1 |
+| "sistOppdatert":/Felles/sistOppdatert | 0..1 |
 | "sistVerifisert":/Felles/sistVerifisert | 0..1 |
 
 
